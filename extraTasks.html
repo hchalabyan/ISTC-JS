@@ -42,6 +42,39 @@
         }
 
         upperOrLowCase(['kihjk','Jlj', 'oik']);
+
+        // task 3
+
+        function sliderPagination(num){
+            var step = 3;
+            var newNum = num;
+            var obj = {};
+            var newObj = {};
+            while(newNum > 0){
+                if(newNum>=3){
+                    for(var i = 0; i<3; i++){
+                        var value = newNum-i;
+                        obj[i] = value;
+                    }
+                }
+               
+                else{
+                    for (const prop of Object.keys(obj)) {
+                        delete obj[prop];
+                    }
+                    for(var j = 0; j<newNum; j++){
+                        var value = newNum-j;
+                        obj[j] = value;
+                    }      
+                } 
+                console.log(obj) 
+                newNum = newNum-step;           
+            }
+        }
+
+        sliderPagination(16)
+
+
         
 
     </script>
