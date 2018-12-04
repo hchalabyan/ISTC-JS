@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // hashvel dzaynavornery
+        
+        function letters(myString){
+            var letterObj = {
+            1:'a',
+            2:'e',
+            3:'i',
+            4:'o',
+            5:'u'
+        }
+            var arr = myString.split("");
+            
+            var sum = 0;
+            for(var i = 0; i<arr.length; i++){
+               
+                for(var key in letterObj){
+                    
+                    if(arr[i] == letterObj[key]){
+                        sum = sum + 1;
+                    }
+                }
+            }
+            console.log(sum);
+        }
+        letters("jaaaadi")
+
+    </script>
+</body>
+</html>
