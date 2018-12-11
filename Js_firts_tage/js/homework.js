@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homework_1</title>
-</head>
-<body>
-    <script>
-        // task 1
+// task 1
 
-        /* 
+        
             var username = prompt('who you are?','');
             
             if(username == "admin"){
@@ -22,11 +12,11 @@
             else{
                 alert("you can't enter")
             } 
-        */
+       
 
         // task 2
 
-        /*  
+         
             var a = 5;
             var b = 10;
 
@@ -40,12 +30,12 @@
                 alert(a+b)
             }
 
-        */
+       
 
 
         // task 3
 
-        /* 
+        
             var userName = prompt("enter your name", '');
             var age = prompt("enter your age", '');
 
@@ -55,11 +45,11 @@
             else{
                 alert("wrang username or age")
             } 
-        */
+       
 
         // task 4
 
-        /* 
+        
             var userName = prompt("enter your name", '');
             
 
@@ -69,35 +59,32 @@
             else{
                 alert("wrang username or age")
             } 
-         */
+        
 
 
          //task 5
 
-        var sum = 1+100*5;
+         var sum = 1+100*5;
 
-        console.log(sum);
-
-        var sum2 = (1+100)*5;
-        console.log(sum2);
-
-
-        //task 6
-
-        /* 
+         console.log(sum);
+ 
+         var sum2 = (1+100)*5;
+         console.log(sum2);
+ 
+ 
+         //task 6
+ 
+         
+         
+             var people = {
+                 tariq: 30
+             }
+ 
+             if(people.tariq >= 18){
+                 alert('you can enter');
+             }
+             else{
+                 alert('you cannnot enter')
+             }
+ 
         
-            var people = {
-                tariq: 30
-            }
-
-            if(people.tariq >= 18){
-                alert('you can enter');
-            }
-            else{
-                alert('you cannnot enter')
-            }
-
-        */
-    </script>
-</body>
-</html>
