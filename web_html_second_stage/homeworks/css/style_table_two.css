@@ -1,0 +1,44 @@
+.main{
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    background-color: #1F2739;
+    padding: 15px;
+}
+.main h1{
+    color: yellow;
+    text-align: center;
+}
+.main table{
+    width: 60%;
+    margin: 0 auto;
+}
+.main table thead{
+    color: #175673;
+}
+.main table thead th{
+    border: 1px solid #202b40;
+}
+
+.main table thead tr{
+    background-color: #1f2639!important;
+}
+.main table tbody tr td:first-child{
+    color: #E86176;
+}
+.main table tbody tr td{
+    color: white;
+}
+.main table tr th, .main table tr td{
+    text-align: left;
+    padding: 15px;
+}
+.main table tr:nth-child(odd){
+    background-color:#2C3446;
+}
+.main table tr:nth-child(even){
+    background-color:#323C50;
+}
+
+
+
