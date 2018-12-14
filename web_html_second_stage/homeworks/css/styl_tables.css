@@ -1,0 +1,32 @@
+.wrapper table, .wrapper caption{
+    background-image: linear-gradient(to right, #32C090 , #31BBAC); 
+    color: white;
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 16px;
+}
+.wrapper table tr td, .wrapper table tr th{
+    padding: 15px;
+    width: 50%;
+}
+.wrapper table thead tr:first-child{
+    background-color:#69CFC5;
+}
+.wrapper table, th, td {
+    border-top: 1px solid #69CFC5;
+    border-bottom: 1px solid #69CFC5;
+    border-collapse: collapse;
+}
+.wrapper table tbody{
+    height: 300px;
+    overflow: auto;
+    display: block;
+
+} 
+.wrapper table thead{
+    display: block;
+}
+.wrapper thead, .wrapper tbody, .wrapper thead tr, .wrapper tbody tr{
+    width: 100%;
+    text-align-last: left;
+} 
