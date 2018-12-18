@@ -10,7 +10,7 @@ while(start<imgArray.length){
         gloabalArray.push(innerArray);
     } 
 }  
-//console.log(gloabalArray)
+console.log(gloabalArray)
 var element = document.getElementsByClassName('slider_container');
     var imgSrc_one = "url("+gloabalArray[0][0]+")";
     var imgSrc_two = "url("+gloabalArray[0][1]+")";
@@ -19,38 +19,41 @@ var element = document.getElementsByClassName('slider_container');
     element[1].style.backgroundImage = imgSrc_two;
     element[2].style.backgroundImage = imgSrc_three; 
 
-var countPlus = 0;
-var countMinus = 1;
+var countPlus = 1;
+
 function right(arr){
-    if(arr[countPlus]!=null){
-        ++countPlus
-        var imgSrc_one = "url("+arr[countPlus][0]+")";
-        var imgSrc_two = "url("+arr[countPlus][1]+")";
-        var imgSrc_three = "url("+arr[countPlus][2]+")";    
-        element[0].style.backgroundImage = imgSrc_one;
-        element[1].style.backgroundImage = imgSrc_two;
-        element[2].style.backgroundImage = imgSrc_three;
+    console.log(arr[countPlus]);
+
+            var imgSrc_one = "url("+arr[countPlus][0]+")";
+            var imgSrc_two = "url("+arr[countPlus][1]+")";
+            var imgSrc_three = "url("+arr[countPlus][2]+")";    
+            element[0].style.backgroundImage = imgSrc_one;
+            element[1].style.backgroundImage = imgSrc_two;
+            element[2].style.backgroundImage = imgSrc_three;
         
+    if(arr[countPlus]!=arr[arr.length-1]){
+        countPlus++ 
     }
     else{
         countPlus = 0;
     }
-    console.log(arr[countPlus])            
+    //console.log(arr[countPlus]) ;         
 }
+var countMinus = gloabalArray.length-1;
 function left(arr){
-    
-    if(arr[countMinus-1]!=null){
-        var imgSrc_one = "url("+arr[countMinus-1][0]+")";
-        var imgSrc_two = "url("+arr[countMinus-1][1]+")";
-        var imgSrc_three = "url("+arr[countMinus-1][2]+")";    
-        element[0].style.backgroundImage = imgSrc_one;
-        element[1].style.backgroundImage = imgSrc_two;
-        element[2].style.backgroundImage = imgSrc_three;
+    console.log(arr[countMinus])
+    var imgSrc_one = "url("+arr[countMinus][0]+")";
+    var imgSrc_two = "url("+arr[countMinus][1]+")";
+    var imgSrc_three = "url("+arr[countMinus][2]+")";    
+    element[0].style.backgroundImage = imgSrc_one;
+    element[1].style.backgroundImage = imgSrc_two;
+    element[2].style.backgroundImage = imgSrc_three;
+    if(arr[0]!=arr[countMinus]){
+       countMinus--
     }
     else{
-        alert('conut nont')
-    }  
-    countMinus--        
+        countMinus = arr.length-1;
+    }         
 }
 
 document.getElementById("rightSlide").addEventListener("click", function() {
@@ -58,7 +61,10 @@ document.getElementById("rightSlide").addEventListener("click", function() {
 }, false);
 document.getElementById("leftSlide").addEventListener("click", function() {
     left(gloabalArray);
-}, false);
+}, false); 
+
+
+
 
 
  
