@@ -20,18 +20,19 @@ var elem = document.getElementsByClassName('slider_container');
 var start = 0;
 var step = 3;
 while(start<imgArray.length){
+    innerArray = [];
     if(imgArray[start]!=null){
-        for(var i = start; i>3; i--) {
+        var elem = imgArray.splice(start,3);
+        innerArray.push(elem);
+        gloabalArray.push(innerArray);
+        elem = [];
+    } 
+     
+  
+}  
+console.log(gloabalArray)   
 
-        } 
-    }
-    for(var i = start; i>3; i--){
-        innerArray.push(imgArray[i]);
-        console.log( innerArray)  
-    }
-    
-    start = start + step;
-}   
+ 
 
 
 
