@@ -1,0 +1,73 @@
+@import 'colors';
+
+#offers{
+    background-color:color(ordinary);
+    width: 100%;
+    overflow: hidden;
+}
+.special_offers{
+    margin: 0 auto;
+    margin-top: 89px;
+    margin-bottom: 32px;
+    h3{
+        font-size: 25px;
+        color:rgb(44, 62, 80);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+        color:rgb(44, 62, 80);
+    }
+}
+// .images_part_start{
+//     padding-left: 0;
+// }
+// .images_part_end{
+//     padding-right: 0;
+// }
+.images_part{   
+        figure{
+            height: auto;
+            background-color: rgb(238, 238, 238);
+            box-shadow: 0px 2px 1px 0px rgba(194, 193, 193, 0.75);
+            margin-bottom: 15%;
+            transition: .3s;
+           
+            figcaption{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                padding: 10px;
+                span{
+                    color: rgb(44, 62, 80);
+                    font-size: 12px;
+                }
+            }
+        }
+        .offers_img_centered{
+            margin: 0 auto;
+        }
+        .offers_img_last{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .offers_img:hover{
+                position: absolute;
+                transform: scale(1.1);
+                border: 5px solid color(secondary);
+                z-index: 11;
+            figcaption{
+                background-color: rgb(44, 62, 80);
+                span{
+                    color: color(ordinary);
+                    span{
+                        color:#445b73;
+                    }
+                }
+            }
+        }   
+}

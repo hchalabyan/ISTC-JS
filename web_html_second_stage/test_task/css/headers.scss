@@ -1,0 +1,69 @@
+@import 'colors';
+
+
+#main_header{
+    background-color:color(primary);
+    width: 100%;
+    overflow: hidden;
+    
+    .top_header_info{
+        display: flex;
+        align-items: center;
+        border-left: 1px solid rgb(23, 32, 42);
+        height: 42px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: 15px;
+        color:white;
+    }
+    .top_header_info_thirth{
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+    .top_header_info_thirth a{
+        color: color(secondary);
+    }
+    .top_header_info_forth{
+        border-right: 1px solid rgb(23, 32, 42);
+    }
+    .top_header_last{
+        margin-left: 22%;
+        border-right: 1px solid rgb(23, 32, 42);
+    }
+    .col{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+}
+#menu{
+    background-color:color(ordinary);
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+
+    .navbar-nav .nav-item a{
+        color: color(primary);
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: .3s;
+    }
+    .navbar-nav .nav-item a:hover{
+        color:color(secondary);
+    }
+    .navbar-nav .nav-item.active a{
+        color:  color(secondary); 
+    }
+    .navbar.navbar-expand-lg.navbar-light.bg-light{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #navbarNavDropdown{
+        justify-content: flex-end;
+    }
+    .navbar-nav li{
+        margin-left: 15px;
+    }
+}
+

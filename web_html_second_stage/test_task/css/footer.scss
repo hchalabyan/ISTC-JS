@@ -1,0 +1,132 @@
+@import 'colors';
+
+footer{
+    background-color:color(primary);
+    padding-top: 62px;
+    h3{
+        font-size: 25px;
+        color:color(secondary);
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+    .news{
+        p{
+            font-size: 13px;
+            color:color(ordinary);
+        }
+        
+        input{
+            border-radius: 3px;
+            width: 147px;
+            height: 32px;
+            outline: none;
+            border:none;
+            padding-left: 10px;
+        }
+        button{
+            width: 48px;
+            height: 32px;
+            color: color(ordinary);
+            text-transform: uppercase;
+            background-color:color(secondary);
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            margin-left: 10px;
+        }
+        
+    }
+    .footer_img_sec{
+        display: flex;
+        
+        figure{
+            border: 2px solid color(ordinary);
+            padding: 6px;
+        }
+        figcaption{
+            color:color(ordinary);
+            font-size: 13px;
+            margin-left: 14px;
+            span{
+                color:color(secondary);
+                font-size: 12px;
+            }
+        }
+
+    }
+    .footer_buttons{
+        button{
+            padding: 7px 3px;
+            background-color:transparent;
+            border-radius: 3px;
+            border:3px solid color(ordinary);
+            color:color(ordinary);
+            outline: none;
+            margin-left: 6px;
+            margin-bottom: 6px;
+        }
+    }
+    .footer_last_part{
+        p{
+            color: color(ordinary);
+            font-size: 13px;
+            span{
+                color: color(secondary);
+            }
+        }
+    }
+    .bottom_sec{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            text-decoration: none;
+            li{
+                margin-left: 20px;
+                list-style-type: none;
+                position: relative;
+                a{
+                    color:color(ordinary);
+                    font-size: 13px;
+                    transition: .3s;
+                }
+                a:hover{
+                    color:color(secondary);
+                }
+                
+            }
+            li:after{
+                content:'::';
+                width: 10px;
+                height: 10px;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -15px;
+                color:color(ordinary);
+            }
+            .last_li:after{
+                content: '';
+            }
+        }
+        p{
+            font-size: 13px;
+            color:rgb(157, 175, 192);
+            text-align: center;
+        }
+    }
+    hr{
+        border-color:rgb(57, 76, 95);
+    }
+    .back_to_top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+  
+
+
+  

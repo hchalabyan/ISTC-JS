@@ -1,0 +1,65 @@
+.holidays_type {
+  background-image: url(../Images/type-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 520px;
+}
+
+.holidays_type .zag {
+  margin-top: 75px;
+}
+
+.holidays_type .zag h3 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.holidays_type .zag p {
+  color: #9eafc0;
+  text-align: center;
+}
+
+.holidays_type .b_icons div {
+  width: 160px;
+  height: 127px;
+  background-image: url(../Images/big-icons.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.holidays_type .b_icons div span {
+  font-size: 20px;
+  position: absolute;
+  color: #9dafc0;
+  bottom: -35px;
+}
+
+.holidays_type .b_icons div.item1 {
+  background-position: 20px -128px;
+}
+
+.holidays_type .b_icons div.item2 {
+  background-position: -137px -128px;
+}
+
+.holidays_type .b_icons div.item3 {
+  background-position: -292px -128px;
+}
+
+.holidays_type .b_icons div.item4 {
+  background-position: -450px -128px;
+}
+
+.holidays_type .b_icons div.item5 {
+  background-position: -606px -128px;
+}
+
+.holidays_type .b_icons div.item6 {
+  background-position: -760px -128px;
+}
+
+.holidays_type .b_icons div:hover {
+  background-position-y: 0;
+}
+/*# sourceMappingURL=holidays.css.map */

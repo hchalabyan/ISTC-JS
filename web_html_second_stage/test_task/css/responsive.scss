@@ -1,0 +1,297 @@
+$fonts:(
+    mediaTablet: 11px
+);
+@function font($font-size){
+    @return map-get($fonts, $font-size);
+}
+@media(max-width:1199px) and (min-width:1024px){
+    #main_header{
+        .top_header_info{
+            font-size: font(mediaTablet);
+        }
+        .top_header_last{
+            margin-left: 30%;
+        }
+    } 
+}
+@media(max-width:1199px) and (min-width:1024px){
+    #main_header{
+        .top_header_info{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: font(mediaTablet);
+        } 
+        .top_header_last{
+            margin-left: 30%;
+        }
+    } 
+    .holidays {
+        span{
+            font-size: 22px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    #offers{
+        height: 450px;
+    }
+}
+@media(max-width:1023px) and (min-width:992px){
+    #main_header{
+        .top_header_info{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: font(mediaTablet);
+        }
+        .top_header_last{
+            margin-left: 30%;
+        }
+    } 
+    #offers{
+        height: 400px;
+    }
+}
+@media(max-width:991px) and (min-width:768px){
+    #main_header{
+        .top_header_info{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: font(mediaTablet);
+        }
+    } 
+    #menu {
+        #navbarNavDropdown{
+            background-color: rgba(44, 62, 80, 0.5);
+            padding-bottom: 10px;
+            .navbar-nav{
+                align-items: center;
+            }
+        }
+    }
+    .holidays::after{
+        top: -20px;
+    }
+    .holidays {
+        span{
+            font-size: 16px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .search_button{
+        width: 85px;
+        height: 39px;
+    }
+    .input_part{
+        span{
+            font-size: 16px;
+        }
+    } 
+    .holidays_type{
+        .zag{
+            margin-top: 50px;
+        }
+    } 
+    footer{
+         .news {
+            button{
+                margin-left: 0!important;
+                margin-top: 5px;
+            }
+         }
+        .footer_img_sec {
+            figure{
+                height: 40px;
+            }
+        }
+    }
+    #offers{
+        height: 400px;
+    }
+} 
+@media(max-width:767px){
+    #menu {
+        #navbarNavDropdown{
+            background-color: rgba(44, 62, 80, 0.5);
+            padding-bottom: 10px;
+            .navbar-nav{
+                align-items: center;
+            }
+        }
+    }
+    #question{
+        height: auto;
+    }
+    .holidays{
+        p{
+            text-align: center;
+        }
+    }
+    .input_part{
+        justify-content: center;
+            .input_text{
+                width: 15%;
+            }
+            .input-group{
+                width: 50%;
+                margin-bottom: 15px;
+            }
+    }
+    .search_button{
+        width: 20%;
+        height: 40px;
+        float: none;
+        margin: 0 auto 15px;
+        display: block;
+    }
+    .holidays::after{
+        display: none;
+    }
+    .images_part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        figure{
+            margin-bottom: 20px!important;
+        }
+    } 
+    .special_offers{
+        p{
+            text-align: center;
+        }
+    }
+    .holidays_type{
+        .zag{
+            margin-top: 30px!important;
+        }
+    } 
+    .images_part_start{
+        padding-left: 15px;
+    }
+    .images_part_end{
+        padding-right: 15px;
+        margin-bottom: 25px;
+    }
+    footer{
+        .bottom_sec{
+            ul{
+                flex-direction: column!important;
+                padding-left: 0;
+                align-items: center;
+                li{
+                    margin-left: 0!important;
+                }
+            }
+        }
+        .social_part_footer{
+            margin: 0 auto;
+            display: block;
+        }
+    }  
+    .client_comm{
+        margin-right: 0!important;
+        .col-12{
+            margin-bottom: 20px;
+        }
+    }
+}  
+@media(max-width:767px) and (min-width:510px){
+    .holidays_type{
+        height: 670px!important;
+    }
+}
+@media(max-width:509px) and (min-width:350px){
+    .holidays_type{
+        height: 744px!important;
+        
+    }
+}
+@media(max-width:349px) and (min-width:320px){
+    .holidays_type{
+        height: 514px;
+        overflow-y: scroll;    
+        .justify-content-around{
+            justify-content: flex-start!important;
+        }
+        .b_icons{
+            div{
+                span{
+                    top: 40%;
+                    left: 87%;
+                }
+            } 
+        }     
+    }
+}
+
+@media(max-width:767px) and (min-width:461px){
+    #main_header{
+        .top_header_info{
+            font-size: 9px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .top_header_last{
+            margin-left: 0;
+        }
+    }
+    #menu {
+        #navbarNavDropdown{
+            background-color: rgba(44, 62, 80, 0.5);
+            padding-bottom: 10px;
+            .navbar-nav{
+                align-items: center;
+            }
+        }
+    }
+    .carousel-item img{
+        height: 340px;
+    }
+    .inner_slide{
+        h1{
+            font-size: 36px;
+        }
+        p{
+            font-size: 20px;
+        }
+        button{
+            padding: 5px 10px;
+        }
+    } 
+} 
+@media(max-width:460px) and (min-width:320px){
+    #main_header{
+        .col{
+            flex-direction: column;
+            align-items: center;
+        }
+        .top_header_info, .top_header_info_forth,.top_header_last{
+            border: none;
+        }
+        .top_header_last{
+            margin-left: 0;
+        }
+    } 
+    .carousel-item img{
+        height: 320px;
+    }
+    .inner_slide{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+        }
+        button{
+            padding: 5px 10px;
+        }
+    } 
+    .carousel-control-next, .carousel-control-prev{
+        width: 45px;
+        height: 45px;
+    }
+    
+    
+}

@@ -1,0 +1,70 @@
+.carousel-control-next, .carousel-control-prev {
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background-color: #9daab7;
+  opacity: 0.3;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #1dd2af;
+}
+
+.carousel-item img {
+  height: 691px;
+}
+
+.carousel-item.active {
+  position: relative;
+}
+
+.inner_slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.inner_slide h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.inner_slide p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+.inner_slide button {
+  padding: 10px 20px;
+  color: white;
+}
+
+.inner_slide .button_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inner_slide .btn.btn-primary {
+  background-color: #1dd2af;
+  margin-right: 28px;
+}
+
+.inner_slide .btn.btn-outline-secondary {
+  border-color: white;
+}
+/*# sourceMappingURL=slider.css.map */

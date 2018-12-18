@@ -1,0 +1,59 @@
+@import 'colors';
+
+.holidays_type {
+    background-image: url(../Images/type-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 520px;
+    .zag {
+        margin-top: 75px;
+        h3 {
+            color: color(ordinary);
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p {
+            color: #9eafc0;
+            text-align: center;
+        }
+    }
+        .b_icons{
+            div {
+                width: 160px;
+                height: 127px;
+                background-image: url(../Images/big-icons.png);
+                background-repeat: no-repeat;
+                position: relative;
+                span {
+                    font-size: 20px;
+                    position: absolute;
+                    color: #9dafc0;
+                    bottom: -35px;
+                }
+                
+            }
+            div.item1 {
+                background-position: 20px -128px;
+            }
+            div.item2 {
+                background-position: -137px -128px;
+            }
+            div.item3 {
+                background-position: -292px -128px;
+            }
+            div.item4 {
+                background-position: -450px -128px;
+            }
+            div.item5 {
+                background-position: -606px -128px;
+            }
+            div.item6 {
+                background-position: -760px -128px;
+            }
+            div:hover {
+                background-position-y: 0;
+            }
+        }  
+    
+}
+

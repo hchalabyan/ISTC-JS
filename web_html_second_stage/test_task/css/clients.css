@@ -1,0 +1,65 @@
+.zag {
+  margin-top: 75px;
+}
+
+.happy_cients .zag * {
+  color: #2c3e50;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.happy_cients .zag * p {
+  text-align: center;
+}
+
+.happy_cients .client_comm {
+  padding-bottom: 145px;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.happy_cients .client_comm .item {
+  border: 1px solid #dedede;
+  padding: 20px 25px;
+  position: relative;
+  opacity: .6;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.happy_cients .client_comm .item p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.happy_cients .client_comm .item h3 {
+  color: #1dd2af;
+  font-size: 18px;
+  margin: 0;
+}
+
+.happy_cients .client_comm .item span {
+  font-size: 13px;
+  color: #b2b2b2;
+}
+
+.happy_cients .client_comm .item:hover {
+  opacity: 1;
+  border-top: 3px solid #1dd2af;
+}
+
+.happy_cients .client_comm .client_comm .item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -23px;
+  background: #fff;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-bottom: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=clients.css.map */
