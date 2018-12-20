@@ -25,9 +25,6 @@ nav div:last-child{
     display: flex;
     justify-content: center;
 }
-nav ul{
-    
-}
 nav ul li{
     display: inline;
     list-style-type: none;
