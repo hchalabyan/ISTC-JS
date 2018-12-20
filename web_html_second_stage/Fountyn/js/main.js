@@ -31,7 +31,7 @@ $(function() {
 
 
 	$('.right_click').off('click').on('click', function(){
-		debugger
+		
 		var el1 = arr.shift();
 		arr.push(el1);
 
@@ -43,7 +43,7 @@ $(function() {
 		$('.carousel_value3').text(arr[2]);
 
 		$('.active_text').text(arrText[0]);
-		debugger
+		
 		$('#carousel_active').attr('data-name', arr[1].toLowerCase());			
 	})
 
