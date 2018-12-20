@@ -140,5 +140,7 @@ nav ul li a:hover{
     nav div:first-child{
         width: auto;
     }
-    
+    .text_content h1{
+        text-align: center;
+    }
 }
