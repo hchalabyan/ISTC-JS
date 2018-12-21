@@ -20,6 +20,7 @@ nav div:first-child{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 30%;
 }
 nav div:last-child{
     display: flex;
@@ -33,7 +34,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: grey;
-    font-size: 30px;
+    font-size: 26px;
     text-transform: uppercase;
     font-family: monospace;
 }
@@ -98,4 +99,48 @@ nav ul li a:hover{
     font-size: 30px;
     font-family: cursive;
     color: #231631;
+}
+@media(min-width:992px) and (max-width:1023px){
+    nav ul li a{
+        font-size: 20px; 
+    }
+    nav img {
+        width: 40%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    nav ul li a{
+        font-size: 17px; 
+    }
+    nav img {
+        width: 50%;
+    }
+}
+@media(min-width:561px) and (max-width:767px){
+    nav ul li a{
+        font-size: 13px; 
+    }
+    nav img {
+        width: 95%;
+    }
+    nav div:first-child{
+        width: 18%;
+    }
+}
+@media(min-width:320px) and (max-width:560px){
+    nav ul li a{
+        font-size: 13px; 
+    }
+    nav img {
+        width: 95%;
+    }
+    nav div:first-child{
+        width: 18%;
+    }
+    nav div:first-child{
+        width: auto;
+    }
+    .text_content h1{
+        text-align: center;
+    }
 }

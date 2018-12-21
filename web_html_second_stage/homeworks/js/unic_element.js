@@ -1,10 +1,8 @@
 //Grel function, vory kgtni arajin chhamynknox elementy stringi mej,   'abacddbec'
 
-var str = 'aкbacddbec';
+var str = 'abacddbec';
 var arr = str.split("");
-var count = 1;
 
-var obj = {};
 var res = [];
 var step = 0;
 
