@@ -1,7 +1,17 @@
-var imgArray = ['img/slider/blur-close.jpg','img/slider/codding.jpeg', 'img/slider/code-coding.jpg','img/slider/coffee-flower.jpg','img/slider/coffee_more.jpeg','img/slider/motivation.jpeg','img/slider/pexels.jpeg','img/slider/team_hands.jpeg',];
-var step = 6;
+var imgArray = [
+    'img/slider/blur-close.jpg',
+    'img/slider/codding.jpeg', 
+    'img/slider/code-coding.jpg',
+    'img/slider/coffee-flower.jpg',
+    'img/slider/coffee_more.jpeg',
+    'img/slider/motivation.jpeg',
+    'img/slider/pexels.jpeg',
+    'img/slider/team_hands.jpeg'
+];
+var step = 3;
 var count = 0;
 var main = document.getElementsByClassName('main')[0];
+var sliderElements = [];
 
 for(var i = 0; i < step; i++){
     var element = document.createElement('div');
@@ -9,11 +19,13 @@ for(var i = 0; i < step; i++){
     element.style.backgroundImage = imgArray[i]? "url("+imgArray[i]+")": 'none';
     element.style.width = 100 / step + '%';
     main.appendChild(element);
+    sliderElements.push(element);
+    console.log(sliderElements);
 }
 
 function right(arr){
     count += step;    
-    if(count >= arr.length-1){
+    if(count > arr.length-1){
         count = 0;
     }
     console.log(count)
@@ -31,7 +43,7 @@ function left(arr){
 
 function slide(arr){
     for(var i = 0; i < step; i++){
-        element[i].style.backgroundImage = arr[count + i]? "url("+arr[count + i]+")": 'none';
+        sliderElements[i].style.backgroundImage = arr[count + i]? "url("+arr[count + i]+")": 'none';
     }
 }
 
