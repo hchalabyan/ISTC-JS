@@ -24,6 +24,7 @@ nav div:first-child{
 }
 nav div:last-child{
     display: flex;
+ 
     justify-content: center;
 }
 nav ul li{
