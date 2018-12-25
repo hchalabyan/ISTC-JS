@@ -1,0 +1,57 @@
+footer {
+  width: 85%;
+  margin: 0 auto;
+  background-image: url("../images/bg/Landing_BadBeat.png");
+  background-repeat: no-repeat;
+  height: 284px;
+  max-height: 284px;
+  background-size: auto 100%;
+  background-position: top center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+}
+
+footer .last_part {
+  height: 284px;
+  max-height: 284px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+}
+
+footer .last_part div:first-child {
+  margin-right: 20px;
+}
+
+footer .last_part p {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+footer .last_part p a {
+  color: white;
+}
+
+footer .last_part p a:hover {
+  color: #de9b2f;
+}
+
+footer .last_part button {
+  width: 100px;
+  height: 35px;
+  border: 1px solid grey;
+  color: white;
+  border-radius: 4px;
+}
+
+footer .last_part .play {
+  background-color: #199625;
+  margin-bottom: 10px;
+}
+
+footer .last_part .demo {
+  background-color: #3A3A3A;
+}
+/*# sourceMappingURL=footer.css.map */

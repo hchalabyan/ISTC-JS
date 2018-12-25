@@ -1,0 +1,19 @@
+@import 'menu';
+
+@import 'slider';
+
+@import 'crash';
+
+@import 'footer';
+
+@import 'live_chat';
+
+@import 'media';
+
+body, html{
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: color(bgcolor);
+}

@@ -1,0 +1,9 @@
+$colors:(
+    bgcolor: #2F2F2F,
+    crash: #EF411C,
+    hover: #de9b2f,
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}

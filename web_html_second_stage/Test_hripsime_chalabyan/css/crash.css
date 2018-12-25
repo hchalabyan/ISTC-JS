@@ -1,0 +1,81 @@
+#crash {
+  width: 85%;
+  margin: 20px auto;
+  background-color: #202020;
+}
+
+#crash .crash_icons {
+  color: grey;
+  height: 44px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+#crash .crash_icons .fa-gg-circle {
+  padding-right: 20px;
+}
+
+#crash .crash_icons .fa-gg-circle:hover {
+  color: #EF411C;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#crash .crash_icons .fa-line-chart:hover {
+  color: #EF411C;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#crash .crash_icons span {
+  padding-left: 15px;
+}
+
+#crash_button {
+  width: 85%;
+  margin: 20px auto;
+}
+
+#crash_button .container-fluid {
+  padding-left: 0;
+}
+
+#crash_button button {
+  width: 75px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #202020;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: relative;
+}
+
+#crash_button p {
+  width: 18px;
+  height: 11px;
+  background-color: #de9b2f;
+  position: absolute;
+  font-size: 8px;
+  text-align: center;
+  top: 0;
+  right: 0;
+  color: black;
+}
+
+#crash_button p i {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: #de9b2f;
+}
+
+#crash_button button:hover {
+  color: #EF411C;
+}
+/*# sourceMappingURL=crash.css.map */

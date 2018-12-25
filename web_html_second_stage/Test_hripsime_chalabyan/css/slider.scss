@@ -1,0 +1,84 @@
+@import 'colors';
+#rating{
+    width: 85%;
+    margin: 0 auto;
+    .carousel-indicators{
+       
+        justify-content: flex-end;
+        li{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            border:2px solid white;
+            position: relative;
+        }
+        .carousel-indicators .active{
+            position: relative;
+        }
+        .active:after{
+            content: '';
+            width: 15px;
+            height: 15px;
+            border-radius: 50px;
+            background-color: white;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+   
+    .carousel-inner{
+        max-height: 400px;
+        height: 400px;
+        .carousel-item{
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+            background-position: top center;
+            background-size: 100% 100%;
+        }
+        .slide_one{
+            background-image: url('../images/slider/tg_logo.png');
+        }
+        .slide_two{
+            background-image: url('../images/slider/casino.jpg');
+        }
+    }
+    .rating_table{
+        .rating_tbl{
+            background-color: #363636;
+            width: 49%;
+            height: 400px;
+            max-height: 400px;
+            padding: 10px;
+            h6{
+                color:white;
+                text-transform: uppercase;
+                margin: 20px 0;
+            }
+            p{
+                background-color: #202020;
+                color: grey;
+                padding: 11px 10px;
+                display: flex;
+                justify-content: space-between;
+                font-size: 12px;
+                align-items: center;
+                margin-bottom: 2px;
+                span:last-child{
+                    color:color(hover);
+                }
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col-lg-6, .col-lg-6{
+        padding-left: 0;
+        padding-right: 0
+    }
+}

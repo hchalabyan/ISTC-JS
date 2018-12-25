@@ -1,0 +1,45 @@
+.main {
+  background-color: #2F2F2F;
+  height: 100%;
+}
+
+.main #main_menu {
+  background-color: #2F2F2F !important;
+  padding-left: 12%;
+}
+
+.main #navbarSupportedContent ul li {
+  position: relative;
+}
+
+.main #navbarSupportedContent ul li a {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.main #navbarSupportedContent ul li p {
+  width: 18px;
+  height: 11px;
+  background-color: #de9b2f;
+  position: absolute;
+  font-size: 8px;
+  text-align: center;
+  top: 0;
+  right: -6px;
+}
+
+.main #navbarSupportedContent ul li p i {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: #de9b2f;
+}
+
+.main #navbarSupportedContent ul li:hover a {
+  color: #de9b2f;
+}
+/*# sourceMappingURL=menu.css.map */

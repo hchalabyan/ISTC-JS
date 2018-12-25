@@ -1,0 +1,45 @@
+@import 'colors';
+
+.main{
+    background-color: color(bgcolor);
+    height: 100%;
+    #main_menu{
+        background-color: color(bgcolor)!important;
+        padding-left: 12%;
+    }
+    #navbarSupportedContent{
+        ul{
+            li{
+                position: relative;
+                a{
+                    color:white;
+                    transition: 1s;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    
+                }
+                p{
+                    width: 18px;
+                    height: 11px;
+                    background-color: #de9b2f;
+                    position: absolute;
+                    font-size: 8px;
+                    text-align: center;
+                    top: 0;
+                    right: -6px;
+                    i{
+                        font-size: 30px;
+                        position: absolute;
+                        left: 0;
+                        top: 0px;
+                        color: color(hover);
+                    }
+                }
+                
+            }
+            li:hover a{
+                color:color(hover);
+            }
+        }
+    }
+}

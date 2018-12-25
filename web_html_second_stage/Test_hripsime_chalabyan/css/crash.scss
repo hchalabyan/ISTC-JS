@@ -1,0 +1,69 @@
+@import 'colors';
+
+#crash{
+    width: 85%;
+    margin: 20px auto;
+    background-color: #202020;
+    .crash_icons{
+        color: grey;
+        height: 44px;
+        line-height: 44px;
+        text-transform: uppercase;
+        .fa-gg-circle{
+            padding-right: 20px;
+        }
+        .fa-gg-circle:hover{
+            color:color(crash);
+            transition: 1s;
+        }
+        .fa-line-chart:hover{
+            color: color(crash);
+            transition: 1s;
+        }
+        span{
+            padding-left: 15px;
+        }
+    } 
+}
+#crash_button{
+        width: 85%;
+        margin: 20px auto;
+    .container-fluid{
+        padding-left: 0;
+    }
+    button{
+        width: 75px;
+        height: 35px;
+        border-radius: 4px;
+        background-color: #202020;
+        border:none;
+        outline: none;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 1s;
+        position: relative;
+    }
+    p{
+        width: 18px;
+        height: 11px;
+        background-color: #de9b2f;
+        position: absolute;
+        font-size: 8px;
+        text-align: center;
+        top: 0;
+        right: 0;
+        color:black;
+        i{
+            font-size: 30px;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            color: color(hover);
+        }
+    }
+    button:hover{
+        color:color(crash);
+    }
+   
+}
