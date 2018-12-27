@@ -1,0 +1,29 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: transform 1s, width 2s, height 1s;
+}
+div:hover{
+    transform: rotateZ(160deg);
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes exampl{
+    0%{
+        background-color: red;
+    }100%{
+        background-color: green;
+    }
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    
+    background-color: red;
+    animation-name: exampl;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
