@@ -81,3 +81,11 @@ header nav button{
 #main div:first-child button:first-child{
    margin-right: 20px;
 }
+#follow{
+    background-color: #FEFEFE;
+}
+.cover{
+    display: flex;
+}
+
+
