@@ -12,7 +12,7 @@ header{
     box-sizing: border-box;
     padding: 0 20px;
 }
-header nav, .cover, #main div:first-child, footer div{
+header nav, .cover, #main div:first-child, footer div:first-child{
     width: 100%;
     display: flex;
     align-items: center;
@@ -180,14 +180,17 @@ header nav button{
 }
 footer{
     background-color: #333333;
+    padding: 0 20px;
 }
 footer div ul{
     display: flex;
 
 }
 footer div ul li{
-    flex: 0 0 10%;
+    flex: 0 0 auto;
     list-style-type: none;
+    margin-right: 10px;
+    color: white;
 }
 
 
