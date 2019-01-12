@@ -1,0 +1,215 @@
+.wrapper, body, html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+.wrapper{
+    background-color: #BEBEBE;
+}
+.game_part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.chips{
+    width: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: bottom 3s, left 3s; 
+    z-index: 2;
+}
+.chips_1{
+    transition-delay: 1s;
+}
+.chips_2{
+    transition-delay: 4s;
+}
+.chips_3{
+    transition-delay: 7s;
+}
+.chips_4{
+    transition-delay: 10s;
+}
+.chips_5{
+    transition-delay: 13s;
+}
+.chips_6{
+    transition-delay: 16s;
+}
+.tools_part, .chips_part{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chips_content{
+    background-color: #979797;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: auto;
+}
+.tools_icons{
+    width: 30px; 
+}
+.tools_icons{
+    transform: rotateY(180deg)
+}
+.tools_part div:first-child, .tools_part div:last-child{
+    background-color: #9E3F45;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-grow: 2;
+}
+.tools_part div:nth-child(2){
+    justify-content: center;
+}
+.tools_part div{
+    display: flex;
+    align-items: center;
+    
+}
+.tools_part div span{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+.tools_part div:last-child{
+    justify-content: flex-end;
+}
+.arrow{
+    width: 60px;
+    background: #979797;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    color: #BCBCBC;
+    margin: 0 auto;
+}
+.bottom_part{
+    width: 760px;
+    bottom: 0;
+    position: absolute;
+}
+.bottom_part .tools_part{
+    width: auto;
+    background-color: #736E72;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+.bottom_part .tools_part div{
+    flex: 1 2 auto;
+}
+.bottom_chips{
+    flex: 2 1 auto!important;
+}
+.bottom_part_10{
+    justify-content: center;
+}
+.bottom_part .arrow{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+@media(max-width:767px) and (min-width:561px){
+    .bottom_part{
+        width: 555px;
+    }
+    .tools_part, .chips_part{
+        width: auto;
+    }
+    .chips{
+        width: 53px;
+    }
+    .bottom_part .tools_part div{
+        flex: 0 2 auto;
+    }
+}
+@media(max-width:560px) and (min-width:481px){
+    .bottom_part{
+        width: 475px;
+    }
+    .tools_part, .chips_part{
+        width: auto;
+    }
+    .chips{
+        width: 50px;
+    }
+    .bottom_part .tools_part div{
+        flex: 0 2 auto;
+    }
+    .tools_icons {
+        width: 20px;
+    }
+    .tools_part div span{
+        font-size: 12px;
+    }
+}
+@media(max-width:480px) and (min-width:375px){
+    .bottom_part{
+        width: 370px;
+        height: 70px;
+    }
+    .tools_part, .chips_part{
+        width: auto;
+        height: 40px!important;
+    }
+    .chips{
+        width: 39px;
+    }
+    .bottom_part .tools_part div{
+        flex: 0 2 auto;
+    }
+    .tools_icons {
+        width: 15px;
+    }
+    .tools_part div span{
+        font-size: 10px;
+    }
+}
+@media(max-width:374px) and (min-width:320px){
+    .bottom_part{
+        width: 315px;
+        height: 68px;
+    }
+    .tools_part, .chips_part{
+        width: auto;
+        height: auto!important;
+    }
+    .chips{
+        width: 29px;
+        padding: 2px;
+    }
+    .bottom_part .tools_part div{
+        flex: 0 2 auto;
+    }
+    .tools_icons {
+        width: 15px;
+    }
+    .tools_part div span{
+        font-size: 10px;
+    }
+}
+
+
+
