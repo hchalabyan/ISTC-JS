@@ -20,7 +20,9 @@
     width: 20%;
     bottom: 0;
     transition: width 3s, bottom 3s;
-
+    height: 11%;
+    cursor: pointer;
+    
 }
 .chips{
     width:15%;
@@ -40,27 +42,10 @@
     left: 0;
     z-index: 3;
     transition: bottom 3s, left 3s;
-    transition-delay: 1s; 
+   
 } 
 
-/* .chips_1{
-    transition-delay: 1s;
-}
-.chips_2{
-    transition-delay: 4s;
-}
-.chips_3{
-    transition-delay: 7s;
-}
-.chips_4{
-    transition-delay: 10s;
-}
-.chips_5{
-    transition-delay: 13s;
-}
-.chips_6{
-    transition-delay: 16s;
-} */
+
 .tools_part, .chips_part{
     width: 100%;
     display: flex;
@@ -71,8 +56,8 @@
     flex-direction: column;
 }
 #arrow{
-    bottom: -2vh;
-    position: absolute;
+    position: relative;
+    bottom: 0;
     transform: rotateX(0);
     transition: transform 3s, bottom 3s;
 }
@@ -104,6 +89,7 @@
     transition: width 3s;
     top: 0;
     left: 0;
+    height: 52px;
 }
 .tools_icons{
     width: 30px; 
@@ -117,6 +103,7 @@
     padding: 5px;
     box-sizing: border-box;
     width: 90%;
+    
 }
 #timer{
     justify-content: center;
@@ -151,36 +138,6 @@
 #chips_10{
     width: 100%;
 }
-/* .bottom_part{
-    width: 760px;
-    bottom: 0;
-    position: absolute;
-} 
-.bottom_part .tools_part{
-    width: auto;
-    background-color: #736E72;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    height: 48px;
-    box-sizing: border-box;
-    padding: 3px;
-}
-.bottom_part .tools_part div{
-    flex: 1 2 auto;
-}
-.bottom_chips{
-    flex: 2 1 auto!important;
-}
-.bottom_part_10{
-    justify-content: center;
-}
-.bottom_part .arrow{
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-}*/
 
 @media(max-width:1440px) and (min-width:992px){
     .tools_part div span{
@@ -202,6 +159,9 @@
     .tools_icons{
         width: 20px;
     }
+    .chips_content{
+        height: 43px;
+    }
 }
 @media(max-width:767px) and (min-width:561px){
   
@@ -220,6 +180,9 @@
     
     .tools_icons{
         width: 20px;
+    }
+    .chips_content{
+        height: 40px;
     }
 }
 @media(max-width:560px) and (min-width:481px){
@@ -245,11 +208,13 @@
     .tools_icons{
         width: 20px;
     }
+    .chips_content{
+        height: 40px;
+    }
 }
 @media(max-width:480px) and (min-width:375px){
     .tools_part, .chips_part{
         width: auto;
-        height: 53px;
     }
     .tools_icons {
         width: 15px;
@@ -263,25 +228,13 @@
     #timer{
         width: 50%;
     }
-}
-/* @media(max-width:374px) and (min-width:320px){
-    .tools_part, .chips_part{
-        width: auto;
-        height:auto!important;
+    .chips_content{
+        height:40px;
     }
-    .tools_icons {
-        width: 15px;
-    }
-    .tools_part div span{
-        font-size: 10px;
-    }
-    #top_part{
-        width: 49%;
-    }
-    #timer{
-        width: 50%;
+    #tools_part{
+        height: 40px;
     }
 }
- */
+
 
 
