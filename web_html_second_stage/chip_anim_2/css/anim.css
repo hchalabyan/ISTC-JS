@@ -1,0 +1,287 @@
+.wrapper, body, html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: hidden;
+}
+.wrapper{
+    background-color: #BEBEBE;
+}
+.game_part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+#top_part{
+    position: relative;
+    width: 20%;
+    bottom: 0;
+    transition: width 3s, bottom 3s;
+
+}
+.chips{
+    width:15%;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+.chips_left, .chips_right{
+    position: relative;
+    left: 0;
+    transition: left 3s; 
+    z-index: 2; 
+}
+ #clear_button,  #undo_button {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    transition: bottom 3s, left 3s;
+    transition-delay: 1s; 
+} 
+
+/* .chips_1{
+    transition-delay: 1s;
+}
+.chips_2{
+    transition-delay: 4s;
+}
+.chips_3{
+    transition-delay: 7s;
+}
+.chips_4{
+    transition-delay: 10s;
+}
+.chips_5{
+    transition-delay: 13s;
+}
+.chips_6{
+    transition-delay: 16s;
+} */
+.tools_part, .chips_part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chips_part{
+    flex-direction: column;
+}
+#arrow{
+    bottom: -2vh;
+    position: absolute;
+    transform: rotateX(0);
+    transition: transform 3s, bottom 3s;
+}
+#tools_part{
+    z-index: 3;
+    position: relative;
+    bottom: 0; 
+    transition: width 3s, bottom 3s;
+}
+#chips_part{
+    z-index: 2;
+    position: relative;
+    bottom:0;
+    transition: width 3s, bottom 3s;
+}
+
+.chips_content{
+    background-color: #979797;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    transition: width 3s;
+    top: 0;
+    left: 0;
+}
+.tools_icons{
+    width: 30px; 
+}
+.tools_icons{
+    transform: rotateY(180deg)
+}
+#clear_button, #undo_button{
+    background-color: #9E3F45;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 90%;
+}
+#timer{
+    justify-content: center;
+    width: 35%;
+}
+.tools_part div{
+    display: flex;
+    align-items: center;
+    
+}
+.tools_part div span{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+.tools_part div:last-child{
+    justify-content: flex-end;
+}
+.arrow{
+    width: 60px;
+    background: #979797;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    color: #BCBCBC;
+    margin: 0 auto;
+}
+#chips_10{
+    width: 100%;
+}
+/* .bottom_part{
+    width: 760px;
+    bottom: 0;
+    position: absolute;
+} 
+.bottom_part .tools_part{
+    width: auto;
+    background-color: #736E72;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    height: 48px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+.bottom_part .tools_part div{
+    flex: 1 2 auto;
+}
+.bottom_chips{
+    flex: 2 1 auto!important;
+}
+.bottom_part_10{
+    justify-content: center;
+}
+.bottom_part .arrow{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}*/
+
+@media(max-width:1440px) and (min-width:992px){
+    .tools_part div span{
+        font-size: 12px;
+    }
+    
+    .tools_icons{
+        width: 20px;
+    }
+}
+@media(max-width:991px) and (min-width:768px){
+    #top_part{
+        width: 35%;
+    }
+    .tools_part div span{
+        font-size: 12px;
+    }
+    
+    .tools_icons{
+        width: 20px;
+    }
+}
+@media(max-width:767px) and (min-width:561px){
+  
+    .tools_part, .chips_part{
+        width: auto;
+    }
+    .bottom_part .tools_part div{
+        flex: 0 2 auto;
+    }
+    #top_part{
+        width: 40%;
+    }
+    .tools_part div span{
+        font-size: 12px;
+    }
+    
+    .tools_icons{
+        width: 20px;
+    }
+}
+@media(max-width:560px) and (min-width:481px){
+    .bottom_part{
+        width: 475px;
+    }
+    .tools_part, .chips_part{
+        width: auto;
+    }
+    .tools_icons {
+        width: 20px;
+    }
+    .tools_part div span{
+        font-size: 12px;
+    }
+    #top_part{
+        width: 40%;
+    }
+    .tools_part div span{
+        font-size: 12px;
+    }
+    
+    .tools_icons{
+        width: 20px;
+    }
+}
+@media(max-width:480px) and (min-width:375px){
+    .tools_part, .chips_part{
+        width: auto;
+        height: 53px;
+    }
+    .tools_icons {
+        width: 15px;
+    }
+    .tools_part div span{
+        font-size: 10px;
+    } 
+    #top_part{
+        width: 49%;
+    }
+    #timer{
+        width: 50%;
+    }
+}
+/* @media(max-width:374px) and (min-width:320px){
+    .tools_part, .chips_part{
+        width: auto;
+        height:auto!important;
+    }
+    .tools_icons {
+        width: 15px;
+    }
+    .tools_part div span{
+        font-size: 10px;
+    }
+    #top_part{
+        width: 49%;
+    }
+    #timer{
+        width: 50%;
+    }
+}
+ */
+
+
