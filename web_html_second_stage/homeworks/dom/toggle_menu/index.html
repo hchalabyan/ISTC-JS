@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Toggle Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style_toggle.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="logo">
-
+        <div class="menu">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul class="web_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">contact with us</a></li>
+                    <li><a href="">sign in</a></li>
+                    <li><a href="">login</a></li>
+                </ul>
+                <div class="mobile_menu">
+                    <i class="fa fa-bars" aria-hidden="true"  id="mobile_menu"></i>
+                    
+                    <div class="menu_toggle">
+                        <ul class="menu_items_auto">
+                            <li><a href="">sign in</a></li>
+                            <li><a href="">login</a></li>
+                        </ul>
+                    </div>
+                    <ul class="menu_items_list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">services</a></li>
+                        <li><a href="">contact with us</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href=""></a>About</li>
-                <li><a href="">services</a></li>
-                <li><a href="">contact with us</a></li>
-                <li><a href="">sign in</a></li>
-                <li><a href="">login</a></li>
-            </ul>
-        </nav>
     </div>
+    <script src="js/script_toggle.js"></script>
 </body>
 </html>

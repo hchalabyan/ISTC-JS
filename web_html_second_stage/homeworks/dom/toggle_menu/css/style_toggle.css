@@ -5,8 +5,94 @@ html, body, .wrapper{
     margin: 0;
     box-sizing: border-box;
 }
-.wrapper{
+.menu{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #42439d;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.logo{
+    flex-basis: auto;
+}
+.logo img{
+    width: 11%;
+}
+nav{
+    flex: 1 0 auto;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    flex: 1 0 auto;
+    margin-right: 20px;
+    padding-left: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #d7d8ea;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+.mobile_menu{
+    display: none;
+    position: relative;
+}
+#mobile_menu{
+    color: #d7d8ea;
+    font-size: 20px;
+}
+.menu_toggle{
+    display: inline-block;
+}
+.menu_items_list{
+    max-height: 0;            
+    overflow-y: hidden;
+    flex-direction: column;
+    transition: max-height 1s;
+    padding-left: 0;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    background-color: #7a97e4;
+}
+.menu_items_list li{
+    margin-bottom: 10px;
+}
+
+@media(max-width:992px) and (min-width:375px){
+    .mobile_menu{
+        display: block;
+        position: relative;
+    }
+    .web_menu{
+        display: none;
+    }
+    
+}
+@media(max-width:767px) and (min-width:591px){
+    .logo img{
+        width: 20%;
+    }
+}
+@media(max-width:590px) and (min-width:481px){
+    .logo img{
+        width: 25%;
+    }
+}
+@media(max-width:480px) and (min-width:426px){
+    .logo img{
+        width: 30%;
+    }
+}
+@media(max-width:425px) and (min-width:375px){
+    .logo img{
+        width: 35%;
+    }
 }
