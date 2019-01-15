@@ -1,0 +1,16 @@
+.wrapper{
+    width: 100%;
+    background-image: url("../img/bg_1.jpg");
+    height: 540px;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+/* .logo{
+    background-image: url("../img/logo/Logo.png");
+    height: 100px;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+} */
+
