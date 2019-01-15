@@ -23,10 +23,11 @@ for(var i = 0; i < step; i++){
     console.log(sliderElements);
 }
 
+
 function right(arr){
     count += step;    
     if(count > arr.length-1){
-        count = 0;
+        count = 0; 
     }
     console.log(count)
     slide(arr);
@@ -50,6 +51,7 @@ function slide(arr){
 document.getElementById("rightSlide").addEventListener("click", function() {
     right(imgArray);
 }, false);
+
 document.getElementById("leftSlide").addEventListener("click", function() {
     left(imgArray);
 }, false); 
