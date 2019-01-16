@@ -6,7 +6,7 @@ body{
     width: 100%;
     background-image: url("../img/bg_1.jpg");
     height: 90vh;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-position: top center;
     background-repeat: no-repeat;
     padding: 0 10em;
@@ -72,7 +72,7 @@ nav{
     font-size: 16px;
 }
 .btn_course{
-    padding: 0 31px;
+    padding: 0 5px;
     border-radius: 50px;
     outline: none;
     height: 42px;
@@ -81,11 +81,80 @@ nav{
     font-size: 18px;
     font-weight: 400;
     font-family: 'Source Sans Pro',sans-serif;
-    width: 33%;
+    width: 12em;
     margin-top: 42px;
     background-color: transparent;
     border: 1px solid white;
 }
+.btn_course_start{
+    margin-right: 12px;
+}
+.btn_cours_personal{
+    background-repeat: no-repeat;
+    background-color: #e7b503;
+    background-position: 2em center;
+    border: none;
+}
+.btn_course_telegram{
+    background-image: url("../img/icons/Telega.png");
+    margin-right: 12px;
+}
+.btn_course_viber{
+    background-image: url("../img/icons/viber.png")
+}
+.autor_project{
+    background-image: url("../img/icons/lines.png");
+    background-repeat: no-repeat;
+    height: 7em;
+    background-position: center 10%;
+}
+.autor_project_cand{
+    background-size: 73%;
+}
+.autor_project_why{
+    background-size: 90%;
+}
+.autor_project h2{
+    font-size: 32px;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.autor_project p{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+.hi_friend h3{
+    font-size: 24px;
+    color: #99cc05;
+    margin-bottom: 20px;
+}
+.hi_friend p{
+    font-size: 18px;
+}
+.autor_project h2 span{
+    font-family: 'Kaushan Script', cursive;
+}
+.why_we{
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e8e8;
+    border-radius: 50px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.why_we div{
+    background-color: #99cc05;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+
+
+
+
+
 
 
 
