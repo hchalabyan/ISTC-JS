@@ -10,6 +10,7 @@ body{
     background-position: top center;
     background-repeat: no-repeat;
     padding: 0 10em;
+    margin-bottom: 5%;
 }
 nav{
     width: 100%;
@@ -89,6 +90,9 @@ nav{
 .btn_course_start{
     margin-right: 12px;
 }
+.personal{
+    margin-top: 6%;
+}
 .btn_cours_personal{
     background-repeat: no-repeat;
     background-color: #e7b503;
@@ -101,6 +105,10 @@ nav{
 }
 .btn_course_viber{
     background-image: url("../img/icons/viber.png")
+}
+.autor{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .autor_project{
     background-image: url("../img/icons/lines.png");
@@ -140,14 +148,46 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: #e8e8e8;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 74%;
+    opacity: 0.6;
 }
 .why_we div{
-    background-color: #99cc05;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    background-color: rgb(153, 204, 5);
+    width: 20%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
 }
+.odd{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.even{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.why_we p{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 0!important;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 600;
+    width: 80%;
+    align-self: center;
+}
+.why_we:hover{
+    background-color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+.mb-20{
+    margin-bottom: 25px;
+}
+
 
 
 
