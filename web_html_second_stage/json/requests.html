@@ -24,16 +24,14 @@
                     console.log(arr);
                     var li;
                     var ul = document.getElementsByTagName("ul");
-                    //var newElem = ul[0].appendChild(li);
+                    console.log()
                     arr.map((item, index)=>{
-                            
-                         //document.getElementById("demo").innerHTML = item.title;
                         for(var key in item){
                             li = document.createElement("li");
-                           
                             li.innerHTML = key;
-                            return ul[0].appendChild(li);
-                        }   
+                            ul[0].appendChild(li);
+                        }  
+                        return ul
                     })
                 }
             };
