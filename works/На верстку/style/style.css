@@ -318,11 +318,12 @@ form h6{
     height: 350px;
     background-size: 54%;
     position: relative;
+    background-position: center;
 }
 .results div{
     position: absolute;
     top: 20px;
-    left:-20px;
+    left:20%;
 }
 
 
