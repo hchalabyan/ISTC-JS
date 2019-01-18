@@ -11,20 +11,22 @@ function showVal(){
 
     myData["userId"] = val[0].value;
     myData["id"] = val[1].value;
-    myData["title"] = val[1].value;
-    myData["body"] = val[1].value;
+    myData["title"] = val[2].value;
+    myData["body"] = val[3].value;
     
-    console.log( JSON.stringify( myData ));
-
+    //console.log( JSON.stringify( myData ));
+    var myJSdata =  JSON.stringify( myData );
+    console.log(myJSdata)
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("fruits").innerHTML = this.responseText;
+            //document.getElementById("fruits").innerHTML = this.responseText;
+            
         }
     };
-    xhttp.open("POST", "demo_post2.asp", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhttp.send("fname=Henry&lname=Ford");
+    xhttp.open("POST", "https://my-json-server.typicode.com/typicode/demo/posts", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(myJSdata);
 }
 
 
