@@ -1,13 +1,32 @@
 function showVal(){
     var val = document.getElementsByTagName("input");
-    var res = document.getElementsByTagName("h6");
-   
-    for (var i = 0; i < val.length; i++){
-        console.log(val[i].value);
-        res[i].innerHTML = val[i].value;
-    }
+    //var res = document.getElementsByTagName("h6");
+   var myData = {
 
+} 
+    /* for (var i = 0; i < val.length; i++){
+        console.log(val[i].value);
+         res[i].innerHTML = val[i].value; 
+    } */
+
+    myData["userId"] = val[0].value;
+    myData["id"] = val[1].value;
+    myData["title"] = val[1].value;
+    myData["body"] = val[1].value;
+    
+    console.log( JSON.stringify( myData ));
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("fruits").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("POST", "demo_post2.asp", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("fname=Henry&lname=Ford");
 }
+
 
 sub_button.addEventListener('click', function(){
     showVal();
