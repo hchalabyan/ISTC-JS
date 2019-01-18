@@ -10,7 +10,9 @@
         <div id="demo">
             <h1>The XMLHttpRequest Object</h1>
             <button type="button" onclick="loadDoc()">Change Content</button>
+            
         </div>
+        <ul></ul>
     <script>
        function loadDoc() {
            var arr = [];
@@ -20,8 +22,18 @@
                     var data = JSON.parse(this.responseText);
                     arr.push(data)
                     console.log(arr);
+                    var li;
+                    var ul = document.getElementsByTagName("ul");
+                    //var newElem = ul[0].appendChild(li);
                     arr.map((item, index)=>{
-                        return document.getElementById("demo").innerHTML = item.title;
+                            
+                         //document.getElementById("demo").innerHTML = item.title;
+                        for(var key in item){
+                            li = document.createElement("li");
+                           
+                            li.innerHTML = key;
+                            return ul[0].appendChild(li);
+                        }   
                     })
                 }
             };

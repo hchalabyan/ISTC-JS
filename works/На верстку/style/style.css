@@ -117,15 +117,15 @@ nav{
     background-position: center 10%;
 }
 .autor_project_cand{
-    background-size: 73%;
+    background-size: 80%;
 }
 .autor_project_why{
-    background-size: 90%;
+    background-size: 95%;
 }
 .autor_project h2{
     font-size: 32px;
     font-family: 'Source Sans Pro',sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
 }
 .autor_project p{
@@ -196,6 +196,7 @@ nav{
 .problems h3{
     font-size: 24px;
     margin-bottom: 27px;
+    font-weight: 600;
 } 
 .problems p{
     font-size: 16px;
@@ -281,6 +282,53 @@ form h6{
     font-size: 12px;
     color: tomato;
 }
+.your_way{
+    background-size: 90%;
+}
+
+.root{
+    background-image: url("../img/row.png");
+    background-repeat: no-repeat;
+    height: 325px;
+    background-size: 85% auto;
+    background-position: center;
+}
+#fruits{
+    width: 100%;
+    background-image: url("../img/fruits.png");
+    background-size: 100%;
+    height: auto;
+}
+.mobile_img{
+    padding-top: 10px;
+    text-align: center;
+}
+.support{
+    color: white;
+}
+.support h2{
+    font-size: 24px;
+}
+.support .btn_course{
+    margin-top: 15px;
+}
+.results{
+    background-image: url("../img/icons/video_layer.png");
+    background-repeat: no-repeat;
+    height: 350px;
+    background-size: 54%;
+    position: relative;
+}
+.results div{
+    position: absolute;
+    top: 20px;
+    left:-20px;
+}
+
+
+
+  
+
 
 
 
