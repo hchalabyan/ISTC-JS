@@ -11,9 +11,12 @@ body{
     background-repeat: no-repeat;
     padding: 0 10em;
     margin-bottom: 5%;
+    position: relative;
 }
 nav{
     width: 100%;
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
 .navbar-nav li{
     margin-left: 25px;
@@ -90,8 +93,14 @@ nav{
 .btn_course_start{
     margin-right: 12px;
 }
-.personal{
-    margin-top: 6%;
+/* .personal{
+    position: absolute;
+    bottom: 10%;
+} */
+.personal_cnsult_header{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
 }
 .btn_cours_personal{
     background-repeat: no-repeat;
@@ -108,7 +117,9 @@ nav{
 }
 .autor{
     margin-top: 5%;
-    margin-bottom: 5%;
+}
+.autor iframe{
+    width:-webkit-fill-available;
 }
 .autor_project{
     background-image: url("../img/icons/lines.png");
@@ -121,6 +132,7 @@ nav{
 }
 .autor_project_why{
     background-size: 95%;
+    margin-top: 80px;
 }
 .autor_project h2{
     font-size: 32px;
@@ -208,7 +220,8 @@ footer{
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 70px;
+    padding: 70px 10em 0 10em;
+    margin-top: 80px;
 }
 .start_course h1{
     font-size: 40px;
@@ -284,6 +297,7 @@ form h6{
 }
 .your_way{
     background-size: 90%;
+    margin-top: 80px;
 }
 
 .root{
@@ -298,6 +312,7 @@ form h6{
     background-image: url("../img/fruits.png");
     background-size: 100%;
     height: auto;
+    margin-top: 80px;
 }
 .mobile_img{
     padding-top: 10px;
@@ -325,6 +340,168 @@ form h6{
     top: 20px;
     left:20%;
 }
+.avatar div{
+    flex: 1 0 auto;
+    align-self: center;
+}
+.avatar div  p{
+    margin-bottom: 0;
+}
+.avatar div span{
+    align-self: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+.avatar div:first-child span{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 600;
+    width: 36%;
+}
+.avatar div:nth-child(2) p span{
+    color: rgb(153, 204, 5);
+    font-weight: 600;
+}
+.avatar_quot{
+    font-style: italic;
+    font-weight: 600;
+}
+.arrow_page{
+    align-items: center;
+}
+.arrow_page p{
+    margin-bottom: 0;
+    background-color: rgb(191, 190, 194);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.arrow_page p i{
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.arrow_page span{
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}
+.terms{
+    color: white;
+    text-align: center;
+    margin: 97px 0;
+    font-size: 14px;
+}
+.navbar-light .navbar-toggler{
+    background-color:rgb(153, 204, 5);
+}
+@media(max-width:1451px) and (min-width: 375px){
+    .wrapper{
+        padding: 0 3em;
+    }
+    footer{
+        padding: 70px 3em 0 3em;
+    }
+
+}
+@media(max-width:1241px) and (min-width: 1200px){
+    .navbar-nav li{
+        margin-left: 20px;
+    }
+    h1{
+        font-size: 2.2em;
+    }
+}
+@media(max-width:1199px) and (min-width: 992px){
+    .navbar-nav li{
+        margin-left: 10px;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 12px;
+    }
+    .menu_part {
+        margin-bottom: 2.5em;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .btn_course{
+        width: 11em;
+    }
+    .personal_cnsult_header{
+        bottom: 8%;
+        left: 6%;
+    }
+}
+@media(max-width:992px) and (min-width: 768px){
+    .menu_part {
+        margin-bottom: 0;
+    }
+    h1{
+        font-size: 2em;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 15px;
+    }
+    .media img{
+        width: 10%;
+    }
+    .media-body h5{
+        font-size: 14px;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .btn_course{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .for_mobile{
+        display: none;
+    }
+    .personal_cnsult_header {
+        display: flex;
+        bottom: -2%;
+        left: 8%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .why_we{
+        margin: 0 auto;
+        width: 100%;
+        font-size: 13px;
+    }
+    .why_we img{
+        width: 40px;
+    }
+    .autor_project_why{
+        margin-bottom: 30px;
+    }
+    .results iframe{
+        width: 200px!important;
+        height:  200px!important;
+    }
+    .results div{
+        top: 22%;
+        left: 32%;
+    }
+    footer .collapse:not(.show){
+        display: block;
+    }
+    .navbar-nav li{
+        margin-left: 12px;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .footer_logo{
+        margin: 0 auto;
+    }
+    #fruits{
+        margin-top: 0;
+    }
+}
+
+
 
 
 
