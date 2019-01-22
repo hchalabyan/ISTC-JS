@@ -234,6 +234,7 @@ footer{
     height: auto;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 .what_know{
     color: white;
@@ -243,7 +244,7 @@ footer{
     font-size: 24px;
 }
 .what_know p{
-    display: 20px;
+    font-size:  20px;
 }
 .what_know .personal_cnsult .btn_course{
     margin-top: 28px;
@@ -409,7 +410,7 @@ form h6{
     }
 
 }
-@media(max-width:1241px) and (min-width: 1200px){
+@media(max-width:1241px) and (min-width: 768px){
     .navbar-nav li{
         margin-left: 20px;
     }
@@ -451,9 +452,16 @@ form h6{
     .wrapper{
         min-height: 782px;
     }
-    h1{
+    h1, .start_course h1{
         font-size: 2em;
     }
+    .autor_project h2, .support h2{
+        font-size: 1.5em;
+    }
+    .autor_project_cand {
+        background-size: 100%;
+    }
+    
     .smart_tools_1, .smart_tools_2{
         margin-bottom: 15px;
     }
@@ -488,8 +496,16 @@ form h6{
     .why_we img{
         width: 40px;
     }
+    .autor_project.autor_project_why h2, .autor_project.your_way h2{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .your_way{
+        background-size: 100%;
+    }
     .autor_project_why{
         margin-bottom: 30px;
+        background-size: 100%;
     }
     .results iframe{
         width: 200px!important;
@@ -513,6 +529,287 @@ form h6{
     }
     #fruits{
         margin-top: 0;
+    }
+    .start_course{
+        background-size: 100%;
+    }
+}
+@media(max-width:767px) and (min-width: 561px){
+    .wrapper{
+        padding: 0 1em;
+    }
+    .navbar-nav li{
+        margin-left: 0;
+    }
+    .navbar-nav{
+        text-align: center;
+        background-color: rgba(153, 204, 5, 0.5);
+    }
+    .navbar-brand.logo{
+        width: 60%;
+    }
+    h1, .start_course h1{
+        font-size: 1.5em;
+    }
+    .autor_project h2{
+        width: 78%;
+        margin: 10px auto 0;
+        font-size: 1.4em;
+    }
+    .autor_project{
+        background-size: 90%;
+    }
+    .autor_project_why{
+        background-size: 100%;
+    }
+    .your_way{
+        background-size: 82%;
+        margin-top: 40px;
+    }
+    .autor_project_cand{
+        background-size: 78%;
+    }
+    /* .autor_project h2, .support h2{
+        
+    } */
+    .menu_part{
+        margin-bottom: 0.5em;
+    }
+    .btn_course{
+        margin-top: 14px;
+        font-size: 14px;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .media img{
+        width: 10%;
+    }
+    .media-body h5{
+        font-size: 12px;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .media{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    .personal_cnsult_header {
+        display: flex;
+        bottom: -2%;
+        left: 8%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .personal_cnsult_header p{
+        width: 70%;
+        text-align: justify;
+    }
+    .why_we p, .problems p, .support{
+        font-size: 0.8em;
+    }
+    .why_we{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .why_we div {
+        width: 38%;
+    }
+    .autor_project p{
+        font-size: 14px;
+    }
+    .root{
+        height: 200px;
+        background-size: 97% auto;
+    }
+    #fruits{
+        margin-top: 40px;
+    }
+    .footer_btn{
+        display: none;
+    }
+    .support{
+        text-align: center;
+    }
+    .support h2{
+        font-size: 1.4em;
+    }
+    .personal_cnsult{
+        padding-bottom: 20px;
+    }
+    footer .collapse:not(.show) {
+        display: block;
+    }
+    footer {
+        padding: 70px 1em 0 1em;
+    }
+    footer .collapse:not(.show) .navbar-nav{
+        background-color:transparent;
+    }
+    .what_know{
+        text-align: center;
+    }
+}
+@media(max-width:560px) and (min-width: 375px){
+    .navbar-toggler{
+        font-size: 1rem;
+    }
+    .wrapper{
+        padding: 0 1em;
+    }
+    .navbar-nav li{
+        margin-left: 0;
+    }
+    .navbar-nav{
+        text-align: center;
+        background-color: rgba(153, 204, 5, 0.5);
+    }
+    .navbar-brand.logo{
+        width: 50%;
+    }
+    h1, .start_course h1{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .autor_project h2{
+        width: 78%;
+        margin: 10px auto 0;
+        font-size: 1.3em;
+    }
+    .autor_project{
+        background-size: 90%;
+    }
+    .autor_project_why{
+        background-size: 100%;
+        margin-top: 40px;
+    }
+    .your_way{
+        background-size: 100%;
+        margin-top: 40px;
+    }
+    .autor_project_cand{
+        background-size: 78%;
+    }
+    /* .autor_project h2, .support h2{
+        
+    } */
+    .menu_part{
+        margin-bottom: 0.5em;
+    }
+    .btn_course{
+        margin-top: 14px;
+        font-size: 14px;
+        width: 9em;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .media img{
+        width: 10%;
+    }
+    .media-body h5{
+        font-size: 12px;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .media{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    .personal_cnsult_header {
+        display: flex;
+        bottom: -2%;
+        left: 8%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .personal_cnsult_header p{
+        width: 47%;
+        text-align: justify;
+    }
+    .btn_course_telegram, .btn_course_viber{
+        background-position: 4px;
+    }
+    .why_we p, .problems p, .support, .what_know p, p, .hi_friend p{
+        font-size: 0.8em;
+    }
+    .why_we{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .why_we div {
+        width: 38%;
+    }
+    .autor_project p{
+        font-size: 14px;
+    }
+    .autor_project{
+        height: 9em;
+    }
+    .root{
+        height: 120px;
+        background-size: 100% auto;
+    }
+    #fruits{
+        margin-top: 40px;
+    }
+    .footer_btn{
+        display: none;
+    }
+    .support{
+        text-align: center;
+    }
+    .support h2{
+        font-size: 1.4em;
+    }
+    .personal_cnsult{
+        padding-bottom: 20px;
+    }
+    footer .collapse:not(.show) {
+        display: block;
+    }
+    footer {
+        padding: 40px 1em 0 1em;
+    }
+    footer .collapse:not(.show) .navbar-nav{
+        background-color:transparent;
+    }
+    .what_know{
+        text-align: center;
+    }
+    .mobile_img img{
+        width: 30%;
+    }
+    .results div iframe{
+        width:300px!important; 
+    }
+    .results div{
+        left: 6%;
+    }
+    .terms{
+        margin: 20px 0;
+    }
+    .start_course h1{
+        margin-bottom: 40px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer .navbar-brand.logo {
+        margin: 0 auto;
+    } 
+    .what_know h2{
+        font-size: 1.3em;
+    }
+    .buttons, .hi_friend{
+        text-align: center;
     }
 }
 
