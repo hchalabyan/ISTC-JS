@@ -395,6 +395,12 @@ form h6{
     background-color:rgb(153, 204, 5);
 }
 @media(max-width:1451px) and (min-width: 375px){
+    .menu_part{
+        margin-bottom: 1.5em;
+    }
+    .btn_cours_personal{
+        margin-top: 10px;
+    }
     .wrapper{
         padding: 0 3em;
     }
@@ -409,6 +415,9 @@ form h6{
     }
     h1{
         font-size: 2.2em;
+    }
+    .wrapper{
+        min-height: 782px;
     }
 }
 @media(max-width:1199px) and (min-width: 992px){
@@ -431,10 +440,16 @@ form h6{
         bottom: 8%;
         left: 6%;
     }
+    .wrapper{
+        min-height: 782px;
+    }
 }
-@media(max-width:992px) and (min-width: 768px){
+@media(max-width:991px) and (min-width: 768px){
     .menu_part {
         margin-bottom: 0;
+    }
+    .wrapper{
+        min-height: 782px;
     }
     h1{
         font-size: 2em;
