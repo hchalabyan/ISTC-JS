@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/KaushanScript/stylesheet.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -14,7 +15,7 @@
         <div class="container-fluid">
             <div class="row justify-content-md-center menu_part">
                 <nav class="navbar navbar-expand-lg navbar-light ">
-                    <a class="navbar-brand logo" href="#"><img src="img/logo/Logo.png" alt=""></a>
+                    <a class="navbar-brand logo" href="#"><img src="img/logo/Logo.png" alt="" class="img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -57,10 +58,10 @@
                 <div class="col-lg-6">
                     <div class="smart_tools_1">
                         <div class="media">
-                            <img src="img/icons/icon_vesi.png" class="mr-3" alt="vesi">
+                            <img src="img/icons/icon_vesi.png" class="mr-3 img-fluid" alt="vesi">
                             <div class="media-body">
                                 <h5 class="mt-0">Изменение <span>привычек!</span> </h5>
-                                Новый результат в объемах <br>
+                                Новый результат в объемах <br class = "for_mobile">
                                 и новых сантиметрах
                             </div>
                         </div>
@@ -68,20 +69,20 @@
                 
                     <div class="smart_tools_2">
                         <div class="media">
-                            <img src="img/icons/icon_body.png" class="mr-3" alt="vesi">
+                            <img src="img/icons/icon_body.png" class="mr-3  img-fluid" alt="vesi">
                             <div class="media-body">
                                 <h5 class="mt-0">Новые  <span>формы!</span> </h5>
-                                Новый результат в объемах <br>
+                                Новый результат в объемах <br class = "for_mobile">
                                 и новых сантиметрах
                             </div>
                         </div>
                     </div>
                     <div class="smart_tools_3">
                         <div class="media">
-                            <img src="img/icons/icon_foots.png" class="mr-3" alt="vesi">
+                            <img src="img/icons/icon_foots.png" class="mr-3  img-fluid" alt="vesi">
                             <div class="media-body">
                                 <h5 class="mt-0">Ощущение   <span>легкости!</span> </h5>
-                                Новый результат в объемах <br>
+                                Новый результат в объемах <br class = "for_mobile">
                                 и новых сантиметрах
                             </div>
                         </div>
@@ -89,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid personal">
+        <!-- <div class="container-fluid personal">
             <div class="row">
                 <div class="col-lg-12">
                     <p>Ваш персональный консультант всегда на связи ;)</p>
@@ -99,6 +100,12 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+       
+        <div class="personal_cnsult personal_cnsult_header">
+                <p>Ваш персональный консультант всегда на связи ;)</p>
+            <button class="btn_course btn_cours_personal btn_course_telegram">Telegram</button>
+            <button class="btn_cours_personal btn_course btn_course_viber">Viber</button>
         </div>
     </div>
     <div class="container autor">
@@ -109,11 +116,11 @@
                     <p>Кандидат медицинских наук, заведующая кафедрой дерматовенеролог</p>
                 </div>
             </div>
-            <div class="col">
-                <iframe width="498" height="282" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <iframe  height="282" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                 </iframe>
             </div>
-            <div class="col align-self-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
                 <div class="hi_friend">
                     <h3>Приветствую, мой дорогой полный друг!</h3>
                     <p>
@@ -160,7 +167,7 @@
             <div class="col">
                 <div class="why_we why_we_body d-flex ml-lg-auto mr-lg-auto">
                     <div class="even">
-                        <img src="img/icons/icon_foots.png" alt="">
+                        <img src="img/icons/icon_burger.png" alt="">
                     </div>
                     <p>Перевести функционирование
                             организма на получение энергии
@@ -203,12 +210,12 @@
     <section id="fruits">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="mobile_img">
                         <img src="img/icons/iPhone.png" alt="phone">
                     </div>
                 </div>
-                <div class="col-lg-8 align-self-center">
+                <div class="col-lg-8 col-md-8 align-self-center">
                     <div class="support">
                         <h1>Постоянная система поддержки</h1>
                         <p>
@@ -242,7 +249,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6"></div>
+            <div class="col-6 align-self-center">
+                <div class="d-flex avatar">
+                    <div class="d-flex">
+                        <img src="img/icons/face.png" alt="avatar">
+                        <span>Джереми <br> Кларксон</span>
+                    </div>
+                  
+                    <div>
+                        <span>Город: Киев</span> <br>
+                        <p>
+                            Результат:<span> -25 кг</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis aliquet ipsum. Cras quam elit, ornare porta finibus interdum, tempus quis libero. Cras placerat placerat urna. Cras ipsum lectus, posuere placerat eros quis, auctor venenatis sem. 
+                    </p>
+                    <p class="avatar_quot"> Cras ipsum lectus, posuere placerat eros quis</p>
+                </div>
+                <div class="d-flex arrow_page">
+                    <p class="text-center">
+                        <i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>
+                    </p>
+                    <span>1 из 5</span>
+                    <p class="text-center">
+                        <i class="fa fa-angle-right fa-2x"aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -280,15 +316,70 @@
                         <img src="img/logo/logo_green.png" alt="">
                         <input type="text" name="name"  value=""
                         placeholder="Ваше имя и фамилия..." id="name">
+
+                        <h6 ></h6>
+
                         <input type="text" name="city" value="" placeholder="Ваш город..." id="city">
+
+                        <h6></h6>
+
                         <input type="number" name="phone_number" value="" placeholder="Ваш номер телефона..." id="phone_number">
-                        <input type="email" name="email" value="" placeholder="Ваш email адрес...">
+
+                        <h6></h6>
+
+                        <input type="email" name="email" value="" placeholder="Ваш email адрес..." id="email">
+
+                        <h6 id="not_valid_mail"></h6>
+
                         <p>
                             Мы не передаем данные 3-им лицам. Отправляя заявку, вы соглашаетесь с правилами обработки персональных данных
                         </p>
                        <button type="button" id="sub_button">Хочу начать курс!</button> 
                     </form>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="terms">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor metus, facilisis in pellentesque ac, sagittis a ante. Donec id sem lorem. Quisque aliquam, sem at consectetur mollis, nibh lacus dapibus tortor, commodo sodales enim sapien eget est. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand logo footer_logo " href="#">
+                        <img src="img/logo/Logo.png" alt="" class="img-fluid">
+                    </a>
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Начало <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Автор проекта</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Важное о курсе</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Как это работает?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">План действий</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
     </footer>
