@@ -82,10 +82,10 @@ nav{
     height: 42px;
     color: white;
     border: none;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
     font-family: 'Source Sans Pro',sans-serif;
-    width: 12em;
+    font-weight: 200;
+    width: 13em;
     margin-top: 42px;
     background-color: transparent;
     border: 1px solid white;
@@ -100,20 +100,23 @@ nav{
 .personal_cnsult_header{
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 4em;
 }
 .btn_cours_personal{
     background-repeat: no-repeat;
     background-color: #e7b503;
-    background-position: 2em center;
     border: none;
 }
 .btn_course_telegram{
     background-image: url("../img/icons/Telega.png");
     margin-right: 12px;
+    background-position: 3.6em center;
+    padding-left: 2em;
 }
 .btn_course_viber{
-    background-image: url("../img/icons/viber.png")
+    background-image: url("../img/icons/viber.png");
+    background-position: 4.6em center;
+    padding-left: 3em;
 }
 .autor{
     margin-top: 5%;
@@ -163,7 +166,7 @@ nav{
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
     height: 100px;
-    width: 74%;
+    width:86%;
     opacity: 0.6;
 }
 .why_we div{
@@ -328,6 +331,27 @@ form h6{
 .support .btn_course{
     margin-top: 15px;
 }
+#videoModal video {
+    width: 100%;
+}
+.results-play-video {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.results-top {
+    background-image: url(../img/icons/video_layer2.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    top: 5px;
+    left: 40px;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+}
 .results{
     background-image: url("../img/icons/video_layer.png");
     background-repeat: no-repeat;
@@ -395,6 +419,11 @@ form h6{
 .navbar-light .navbar-toggler{
     background-color:rgb(153, 204, 5);
 }
+@media(max-width:1803px) and (min-width:1451px){
+    .project_smart_slim h1{
+        width: 91%;
+    }
+}
 @media(max-width:1451px) and (min-width: 375px){
     .menu_part{
         margin-bottom: 1.5em;
@@ -403,7 +432,7 @@ form h6{
         margin-top: 10px;
     }
     .wrapper{
-        padding: 0 3em;
+        padding: 0 4em;
     }
     footer{
         padding: 70px 3em 0 3em;
@@ -421,6 +450,19 @@ form h6{
         min-height: 782px;
     }
 }
+@media(max-width:1000px) and (min-width:992px){
+    .btn_course{
+        width: 8em;
+    }
+    .btn_course_telegram{
+        background-position: 2em center;
+        padding-left: 1em;
+    }
+    .btn_course_viber{
+        background-position: 3.5em center;
+        padding-left: 2.5em;
+    }
+}
 @media(max-width:1199px) and (min-width: 992px){
     .navbar-nav li{
         margin-left: 10px;
@@ -433,16 +475,23 @@ form h6{
     }
     h1{
         font-size: 2em;
+        width: 91%;
     }
-    .btn_course{
+    /* .btn_course{
         width: 11em;
-    }
+    } */
     .personal_cnsult_header{
         bottom: 8%;
         left: 6%;
     }
     .wrapper{
         min-height: 782px;
+    }
+}
+@media(max-width:1000px) and (min-width:992px){
+    .btn_course{
+        width: 16em;
+        font-size: 12px;
     }
 }
 @media(max-width:991px) and (min-width: 768px){
@@ -515,6 +564,13 @@ form h6{
         top: 22%;
         left: 32%;
     }
+    .results-top{
+        background-size: 100%;
+        left: 0;
+    }
+    .results{
+        background-size: 91%;
+    }
     footer .collapse:not(.show){
         display: block;
     }
@@ -578,6 +634,7 @@ form h6{
     .btn_course{
         margin-top: 14px;
         font-size: 14px;
+        width: 14em;
     }
     .smart_tools_1, .smart_tools_2{
         margin-bottom: 15px;
@@ -652,6 +709,10 @@ form h6{
     }
     .what_know{
         text-align: center;
+    }
+    .results-top{
+        background-size: 79%;
+        width: 78%;
     }
 }
 @media(max-width:560px) and (min-width: 375px){
@@ -735,8 +796,11 @@ form h6{
         width: 47%;
         text-align: justify;
     }
-    .btn_course_telegram, .btn_course_viber{
-        background-position: 4px;
+    .btn_course_telegram{
+        background-position: 20px;
+    }
+    .btn_course_viber{
+        background-position: 30px;
     }
     .why_we p, .problems p, .support, .what_know p, p, .hi_friend p{
         font-size: 0.8em;
@@ -810,6 +874,10 @@ form h6{
     }
     .buttons, .hi_friend{
         text-align: center;
+    }
+    .results-top{
+        background-size: 79%;
+        width: 78%;
     }
 }
 
