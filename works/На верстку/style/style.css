@@ -131,10 +131,10 @@ nav{
     background-position: center 10%;
 }
 .autor_project_cand{
-    background-size: 80%;
+    background-size: 75%;
 }
 .autor_project_why{
-    background-size: 95%;
+    background-size: 93%;
     margin-top: 80px;
 }
 .autor_project h2{
@@ -142,6 +142,9 @@ nav{
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 600;
     text-align: center;
+}
+.autor_project_why_res{
+    background-size: 88%;
 }
 .autor_project p{
     font-size: 20px;
@@ -237,7 +240,7 @@ footer{
     height: auto;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 76%;
 }
 .what_know{
     color: white;
@@ -452,14 +455,15 @@ form h6{
 }
 @media(max-width:1000px) and (min-width:992px){
     .btn_course{
-        width: 8em;
+        width: 16em;
+        font-size: 12px;
     }
     .btn_course_telegram{
-        background-position: 2em center;
+        background-position: 3.em center;
         padding-left: 1em;
     }
     .btn_course_viber{
-        background-position: 3.5em center;
+        background-position: 4.5em center;
         padding-left: 2.5em;
     }
 }
@@ -476,6 +480,7 @@ form h6{
     h1{
         font-size: 2em;
         width: 91%;
+        margin: 0 auto;
     }
     /* .btn_course{
         width: 11em;
@@ -487,13 +492,39 @@ form h6{
     .wrapper{
         min-height: 782px;
     }
+    .autor_project_cand {
+        background-size: 89%;
+    }
+    .autor_project h2{
+        width: 72%;
+        margin: 0 auto;
+    }
+    .autor_project_why{
+        background-size: 83%;
+    }
+    .your_way{
+        background-size: 95%;
+    }
+    .autor_project_why_res{
+        background-size: 91%;
+    }
+    .start_course{
+        background-size: 89%;
+    }
+    
 }
-@media(max-width:1000px) and (min-width:992px){
+/* @media(max-width:1000px) and (min-width:992px){
     .btn_course{
         width: 16em;
         font-size: 12px;
     }
-}
+    .btn_course_viber{
+        background-size: 4.6em center;
+    }
+    .btn_course_telegram{
+        background-size: 3em center;
+    }
+} */
 @media(max-width:991px) and (min-width: 768px){
     .menu_part {
         margin-bottom: 0;
