@@ -439,11 +439,60 @@ form h6{
 }
 @media(max-width:1803px) and (min-width:1200px){
     .project_smart_slim h1{
-        font-size: 1.7rem; 
+        font-size: 1.7em; 
     }
 }
-@media(max-width:1451px) and (min-width: 375px){
+@media(max-width:1600px) and (min-width: 1451px){
+    .wrapper{
+        max-height: 720px;
+        padding: 0 8em;
+    }
+    .personal_cnsult_header{
+        left: 8em;
+    }
+    .message_container {
+        width: 25%;
+    }
+}
+@media(max-width:1450px) and (min-width: 1200px){
+    .navbar-nav li {
+        margin-left: 10px;
+    }
+    .wrapper{
+        background-size: 100%;
+        min-height: 600px;
+        padding: 0 4.9em;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .media-body h5 {
+        font-size: 14px;
+    }
+    .media img{
+        width: 20%;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 10px;
+    }
+    .message_container{
+        width: 23%;
+        left: 86%;
+    }
     .btn_cours_personal{
+        margin-top: 10px;
+    }
+    
+    .personal_cnsult_header{
+        left: 4.9em;
+    }
+    footer{
+        padding: 70px 3em 0 3em;
+    }
+
+}
+/*@media(max-width:1450px) and (min-width: 375px){
+     .btn_cours_personal{
         margin-top: 10px;
     }
     .wrapper{
@@ -454,14 +503,10 @@ form h6{
     }
     footer{
         padding: 70px 3em 0 3em;
-    }
+    } 
 
-}
-@media(max-width:1451px) and (min-width: 1200px){
-    .navbar-nav li {
-        margin-left: 10px;
-    }
-}
+}*/
+
 
 @media(max-width:1000px) and (min-width:992px){
     .btn_course{
@@ -472,6 +517,7 @@ form h6{
         background-position: 4em center;
         padding-left: 2.5em;
     }
+    
 }
 @media(max-width:1199px) and (min-width: 992px){
     .navbar-brand.logo{
@@ -493,23 +539,23 @@ form h6{
         background-size: contain;
         height: 72vh;
         min-height: 468px;
+        padding: 0 3em;
     }
-    /* .btn_course{
-        width: 11em;
-    } */
     .personal_cnsult_header{
         bottom: 8%;
-        left: 6%;
+        left: 3em;
     }
     .autor_project_cand {
-        background-size: 89%;
+        background-size: 79%;
     }
     .autor_project h2{
-        width: 72%;
-        margin: 0 auto;
+       font-size: 27px;
     }
     .autor_project_why{
         background-size: 83%;
+    }
+    .autor_project_why {
+        background-size: 93%;
     }
     .your_way{
         background-size: 95%;
@@ -518,13 +564,13 @@ form h6{
         background-size: 91%;
     }
     .start_course{
-        background-size: 89%;
+        background-size: 100%;
     }
     .media-body{
-        font-size: 12px;
+        font-size: 11px;
     }
     .media-body h5 {
-        font-size: 14px;
+        font-size: 13px;
     }
     .media img{
         width: 20%;
@@ -532,7 +578,13 @@ form h6{
     .smart_tools_1, .smart_tools_2{
         margin-bottom: 10px;
     }
-    
+    .message_container {
+        left: 70%;
+        width: 25%;
+    }
+    .start_course h1{
+        font-size: 34px;
+    }
     
 }
 /* @media(max-width:1000px) and (min-width:992px){
