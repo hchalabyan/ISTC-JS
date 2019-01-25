@@ -6,6 +6,7 @@ body{
     width: 100%;
     background-image: url("../img/bg_1.jpg");
     height: 90vh;
+    min-height: 768px;
     background-size: 100% 100%;
     background-position: top center;
     background-repeat: no-repeat;
@@ -13,6 +14,8 @@ body{
     margin-bottom: 5%;
     position: relative;
 }
+
+  
 nav{
     width: 100%;
     padding-left: 0!important;
@@ -28,7 +31,7 @@ nav{
     color: rgb(166, 212, 52);
 }
 .menu_part{
-    margin-bottom: 8.5em;
+    margin-bottom: 8%;
 }
 .project_smart_slim{
     padding-left: calc
@@ -61,7 +64,8 @@ nav{
  .media{
     background-color: #fff;
     border-radius: 57px;
-    padding: 10px 20px;
+    padding: 10px 35px;
+    align-items: center;
 }
 .smart_tools_1 .media h5 span{
     color: #55bff1;
@@ -86,12 +90,13 @@ nav{
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 200;
     width: 13em;
-    margin-top: 42px;
+   
     background-color: transparent;
     border: 1px solid white;
 }
 .btn_course_start{
     margin-right: 12px;
+    margin-top: 42px;
 }
 /* .personal{
     position: absolute;
@@ -100,12 +105,22 @@ nav{
 .personal_cnsult_header{
     position: absolute;
     bottom: 10%;
-    left: 4em;
+    left: 10em;
+    
 }
+
+  
+.message_container{
+    position:absolute;
+    bottom:50%;
+    left:94%;
+} 
 .btn_cours_personal{
     background-repeat: no-repeat;
     background-color: #e7b503;
     border: none;
+    margin-top: 14px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.33);
 }
 .btn_course_telegram{
     background-image: url("../img/icons/Telega.png");
@@ -115,8 +130,8 @@ nav{
 }
 .btn_course_viber{
     background-image: url("../img/icons/viber.png");
-    background-position: 4.6em center;
-    padding-left: 3em;
+    background-position: 3.6em center;
+    padding-left: 2em;
 }
 .autor{
     margin-top: 5%;
@@ -422,65 +437,62 @@ form h6{
 .navbar-light .navbar-toggler{
     background-color:rgb(153, 204, 5);
 }
-@media(max-width:1803px) and (min-width:1451px){
+@media(max-width:1803px) and (min-width:1200px){
     .project_smart_slim h1{
-        width: 91%;
+        font-size: 1.7rem; 
     }
 }
 @media(max-width:1451px) and (min-width: 375px){
-    .menu_part{
-        margin-bottom: 1.5em;
-    }
     .btn_cours_personal{
         margin-top: 10px;
     }
     .wrapper{
-        padding: 0 4em;
+        padding: 0 4.9em;
+    }
+    .personal_cnsult_header{
+        left: 4.9em;
     }
     footer{
         padding: 70px 3em 0 3em;
     }
 
 }
-@media(max-width:1241px) and (min-width: 768px){
-    .navbar-nav li{
-        margin-left: 20px;
-    }
-    h1{
-        font-size: 2.2em;
-    }
-    .wrapper{
-        min-height: 782px;
+@media(max-width:1451px) and (min-width: 1200px){
+    .navbar-nav li {
+        margin-left: 10px;
     }
 }
+
 @media(max-width:1000px) and (min-width:992px){
     .btn_course{
         width: 16em;
         font-size: 12px;
     }
-    .btn_course_telegram{
-        background-position: 3.em center;
-        padding-left: 1em;
-    }
-    .btn_course_viber{
-        background-position: 4.5em center;
+    .btn_course_telegram,  .btn_course_viber{
+        background-position: 4em center;
         padding-left: 2.5em;
     }
 }
 @media(max-width:1199px) and (min-width: 992px){
+    .navbar-brand.logo{
+        width: 29%;
+    }
     .navbar-nav li{
-        margin-left: 10px;
+        margin-left: 0px;
     }
     .navbar-light .navbar-nav .nav-link{
         font-size: 12px;
     }
     .menu_part {
-        margin-bottom: 2.5em;
+        margin-bottom: 1%;
     }
-    h1{
-        font-size: 2em;
-        width: 91%;
-        margin: 0 auto;
+    .project_smart_slim h1{
+        font-size:1.3em;
+    }
+    .wrapper{
+        background-size: contain;
+        height: 72vh;
+        min-height: 468px;
     }
     /* .btn_course{
         width: 11em;
@@ -488,9 +500,6 @@ form h6{
     .personal_cnsult_header{
         bottom: 8%;
         left: 6%;
-    }
-    .wrapper{
-        min-height: 782px;
     }
     .autor_project_cand {
         background-size: 89%;
@@ -511,6 +520,19 @@ form h6{
     .start_course{
         background-size: 89%;
     }
+    .media-body{
+        font-size: 12px;
+    }
+    .media-body h5 {
+        font-size: 14px;
+    }
+    .media img{
+        width: 20%;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 10px;
+    }
+    
     
 }
 /* @media(max-width:1000px) and (min-width:992px){
