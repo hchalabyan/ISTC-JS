@@ -14,8 +14,8 @@
         </div>
         <ul></ul>
     <script>
-       function loadDoc() {
-           var arr = [];
+        function loadDoc() {
+            var arr = [];
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
@@ -37,7 +37,20 @@
             };
             xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
             xhttp.send();
-        } 
+
+             /* fetch('https://jsonplaceholder.typicode.com/todos/1')
+                .then(function(response) {
+                    console.log(response)
+                })
+                .catch(function(error) {
+                console.log('Looks like there was a problem: \n', error);
+            }); */
+        }  
+
+
+
+       
+
     </script>
 </body>
 </html>
