@@ -2,11 +2,6 @@ function showVal(){
     var val = document.getElementsByTagName("input");
     //var res = document.getElementsByTagName("h6");
    var myData = {};
-
-
-
-   
-
     myData.userId = val[0].value;
     myData.id = val[1].value;
     myData.title = val[2].value;
