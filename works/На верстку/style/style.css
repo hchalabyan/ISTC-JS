@@ -6,6 +6,7 @@ body{
     width: 100%;
     background-image: url("../img/bg_1.jpg");
     height: 90vh;
+    min-height: 768px;
     background-size: 100% 100%;
     background-position: top center;
     background-repeat: no-repeat;
@@ -13,6 +14,8 @@ body{
     margin-bottom: 5%;
     position: relative;
 }
+
+  
 nav{
     width: 100%;
     padding-left: 0!important;
@@ -28,7 +31,7 @@ nav{
     color: rgb(166, 212, 52);
 }
 .menu_part{
-    margin-bottom: 8.5em;
+    margin-bottom: 8%;
 }
 .project_smart_slim{
     padding-left: calc
@@ -61,7 +64,8 @@ nav{
  .media{
     background-color: #fff;
     border-radius: 57px;
-    padding: 10px 20px;
+    padding: 10px 35px;
+    align-items: center;
 }
 .smart_tools_1 .media h5 span{
     color: #55bff1;
@@ -82,16 +86,17 @@ nav{
     height: 42px;
     color: white;
     border: none;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
     font-family: 'Source Sans Pro',sans-serif;
-    width: 12em;
-    margin-top: 42px;
+    font-weight: 200;
+    width: 13em;
+   
     background-color: transparent;
     border: 1px solid white;
 }
 .btn_course_start{
     margin-right: 12px;
+    margin-top: 42px;
 }
 /* .personal{
     position: absolute;
@@ -100,20 +105,33 @@ nav{
 .personal_cnsult_header{
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 10em;
+    
 }
+
+  
+.message_container{
+    position:absolute;
+    bottom:50%;
+    left:94%;
+} 
 .btn_cours_personal{
     background-repeat: no-repeat;
     background-color: #e7b503;
-    background-position: 2em center;
     border: none;
+    margin-top: 14px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.33);
 }
 .btn_course_telegram{
     background-image: url("../img/icons/Telega.png");
     margin-right: 12px;
+    background-position: 3.6em center;
+    padding-left: 2em;
 }
 .btn_course_viber{
-    background-image: url("../img/icons/viber.png")
+    background-image: url("../img/icons/viber.png");
+    background-position: 3.6em center;
+    padding-left: 2em;
 }
 .autor{
     margin-top: 5%;
@@ -128,10 +146,10 @@ nav{
     background-position: center 10%;
 }
 .autor_project_cand{
-    background-size: 80%;
+    background-size: 75%;
 }
 .autor_project_why{
-    background-size: 95%;
+    background-size: 93%;
     margin-top: 80px;
 }
 .autor_project h2{
@@ -139,6 +157,9 @@ nav{
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 600;
     text-align: center;
+}
+.autor_project_why_res{
+    background-size: 88%;
 }
 .autor_project p{
     font-size: 20px;
@@ -163,7 +184,7 @@ nav{
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
     height: 100px;
-    width: 74%;
+    width:86%;
     opacity: 0.6;
 }
 .why_we div{
@@ -234,6 +255,7 @@ footer{
     height: auto;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 76%;
 }
 .what_know{
     color: white;
@@ -243,7 +265,7 @@ footer{
     font-size: 24px;
 }
 .what_know p{
-    display: 20px;
+    font-size:  20px;
 }
 .what_know .personal_cnsult .btn_course{
     margin-top: 28px;
@@ -327,6 +349,27 @@ form h6{
 .support .btn_course{
     margin-top: 15px;
 }
+#videoModal video {
+    width: 100%;
+}
+.results-play-video {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.results-top {
+    background-image: url(../img/icons/video_layer2.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    top: 5px;
+    left: 40px;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+}
 .results{
     background-image: url("../img/icons/video_layer.png");
     background-repeat: no-repeat;
@@ -394,51 +437,185 @@ form h6{
 .navbar-light .navbar-toggler{
     background-color:rgb(153, 204, 5);
 }
-@media(max-width:1451px) and (min-width: 375px){
+@media(max-width:1803px) and (min-width:1200px){
+    .project_smart_slim h1{
+        font-size: 1.7em; 
+    }
+}
+@media(max-width:1600px) and (min-width: 1451px){
     .wrapper{
-        padding: 0 3em;
+        max-height: 720px;
+        padding: 0 8em;
+    }
+    .personal_cnsult_header{
+        left: 8em;
+    }
+    .message_container {
+        width: 25%;
+    }
+}
+@media(max-width:1450px) and (min-width: 1200px){
+    .navbar-nav li {
+        margin-left: 10px;
+    }
+    .wrapper{
+        background-size: 100%;
+        min-height: 600px;
+        padding: 0 4.9em;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .media-body h5 {
+        font-size: 14px;
+    }
+    .media img{
+        width: 20%;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 10px;
+    }
+    .message_container{
+        width: 23%;
+        left: 86%;
+    }
+    .btn_cours_personal{
+        margin-top: 10px;
+    }
+    
+    .personal_cnsult_header{
+        left: 4.9em;
     }
     footer{
         padding: 70px 3em 0 3em;
     }
 
 }
-@media(max-width:1241px) and (min-width: 1200px){
-    .navbar-nav li{
-        margin-left: 20px;
+/*@media(max-width:1450px) and (min-width: 375px){
+     .btn_cours_personal{
+        margin-top: 10px;
     }
-    h1{
-        font-size: 2.2em;
+    .wrapper{
+        padding: 0 4.9em;
     }
+    .personal_cnsult_header{
+        left: 4.9em;
+    }
+    footer{
+        padding: 70px 3em 0 3em;
+    } 
+
+}*/
+
+
+@media(max-width:1000px) and (min-width:992px){
+    .btn_course{
+        width: 16em;
+        font-size: 12px;
+    }
+    .btn_course_telegram,  .btn_course_viber{
+        background-position: 4em center;
+        padding-left: 2.5em;
+    }
+    
 }
 @media(max-width:1199px) and (min-width: 992px){
+    .navbar-brand.logo{
+        width: 29%;
+    }
     .navbar-nav li{
-        margin-left: 10px;
+        margin-left: 0px;
     }
     .navbar-light .navbar-nav .nav-link{
         font-size: 12px;
     }
     .menu_part {
-        margin-bottom: 2.5em;
+        margin-bottom: 1%;
     }
-    h1{
-        font-size: 2em;
+    .project_smart_slim h1{
+        font-size:1.3em;
     }
-    .btn_course{
-        width: 11em;
+    .wrapper{
+        background-size: contain;
+        height: 72vh;
+        min-height: 468px;
+        padding: 0 3em;
     }
     .personal_cnsult_header{
         bottom: 8%;
-        left: 6%;
+        left: 3em;
     }
+    .autor_project_cand {
+        background-size: 79%;
+    }
+    .autor_project h2{
+       font-size: 27px;
+    }
+    .autor_project_why{
+        background-size: 83%;
+    }
+    .autor_project_why {
+        background-size: 93%;
+    }
+    .your_way{
+        background-size: 95%;
+    }
+    .autor_project_why_res{
+        background-size: 91%;
+    }
+    .start_course{
+        background-size: 100%;
+    }
+    .media-body{
+        font-size: 11px;
+    }
+    .media-body h5 {
+        font-size: 13px;
+    }
+    .media img{
+        width: 20%;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 10px;
+    }
+    .message_container {
+        left: 70%;
+        width: 25%;
+    }
+    .start_course h1{
+        font-size: 34px;
+    }
+    
 }
-@media(max-width:992px) and (min-width: 768px){
+/* @media(max-width:1000px) and (min-width:992px){
+    .btn_course{
+        width: 16em;
+        font-size: 12px;
+    }
+    .btn_course_viber{
+        background-size: 4.6em center;
+    }
+    .btn_course_telegram{
+        background-size: 3em center;
+    }
+} */
+@media(max-width:991px) and (min-width: 768px){
     .menu_part {
         margin-bottom: 0;
     }
-    h1{
+    .wrapper{
+        min-height: 782px;
+    }
+    h1, .start_course h1{
         font-size: 2em;
     }
+    .autor_project h2, .support h2{
+        font-size: 1.5em;
+    }
+    .autor_project_cand {
+        background-size: 100%;
+    }
+    
     .smart_tools_1, .smart_tools_2{
         margin-bottom: 15px;
     }
@@ -473,8 +650,16 @@ form h6{
     .why_we img{
         width: 40px;
     }
+    .autor_project.autor_project_why h2, .autor_project.your_way h2{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .your_way{
+        background-size: 100%;
+    }
     .autor_project_why{
         margin-bottom: 30px;
+        background-size: 100%;
     }
     .results iframe{
         width: 200px!important;
@@ -483,6 +668,13 @@ form h6{
     .results div{
         top: 22%;
         left: 32%;
+    }
+    .results-top{
+        background-size: 100%;
+        left: 0;
+    }
+    .results{
+        background-size: 91%;
     }
     footer .collapse:not(.show){
         display: block;
@@ -498,6 +690,299 @@ form h6{
     }
     #fruits{
         margin-top: 0;
+    }
+    .start_course{
+        background-size: 100%;
+    }
+}
+@media(max-width:767px) and (min-width: 561px){
+    .wrapper{
+        padding: 0 1em;
+    }
+    .navbar-nav li{
+        margin-left: 0;
+    }
+    .navbar-nav{
+        text-align: center;
+        background-color: rgba(153, 204, 5, 0.5);
+    }
+    .navbar-brand.logo{
+        width: 60%;
+    }
+    h1, .start_course h1{
+        font-size: 1.5em;
+    }
+    .autor_project h2{
+        width: 78%;
+        margin: 10px auto 0;
+        font-size: 1.4em;
+    }
+    .autor_project{
+        background-size: 90%;
+    }
+    .autor_project_why{
+        background-size: 100%;
+    }
+    .your_way{
+        background-size: 82%;
+        margin-top: 40px;
+    }
+    .autor_project_cand{
+        background-size: 78%;
+    }
+    /* .autor_project h2, .support h2{
+        
+    } */
+    .menu_part{
+        margin-bottom: 0.5em;
+    }
+    .btn_course{
+        margin-top: 14px;
+        font-size: 14px;
+        width: 14em;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .media img{
+        width: 10%;
+    }
+    .media-body h5{
+        font-size: 12px;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .media{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    .personal_cnsult_header {
+        display: flex;
+        bottom: -2%;
+        left: 8%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .personal_cnsult_header p{
+        width: 70%;
+        text-align: justify;
+    }
+    .why_we p, .problems p, .support{
+        font-size: 0.8em;
+    }
+    .why_we{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .why_we div {
+        width: 38%;
+    }
+    .autor_project p{
+        font-size: 14px;
+    }
+    .root{
+        height: 200px;
+        background-size: 97% auto;
+    }
+    #fruits{
+        margin-top: 40px;
+    }
+    .footer_btn{
+        display: none;
+    }
+    .support{
+        text-align: center;
+    }
+    .support h2{
+        font-size: 1.4em;
+    }
+    .personal_cnsult{
+        padding-bottom: 20px;
+    }
+    footer .collapse:not(.show) {
+        display: block;
+    }
+    footer {
+        padding: 70px 1em 0 1em;
+    }
+    footer .collapse:not(.show) .navbar-nav{
+        background-color:transparent;
+    }
+    .what_know{
+        text-align: center;
+    }
+    .results-top{
+        background-size: 79%;
+        width: 78%;
+    }
+}
+@media(max-width:560px) and (min-width: 375px){
+    .navbar-toggler{
+        font-size: 1rem;
+    }
+    .wrapper{
+        padding: 0 1em;
+    }
+    .navbar-nav li{
+        margin-left: 0;
+    }
+    .navbar-nav{
+        text-align: center;
+        background-color: rgba(153, 204, 5, 0.5);
+    }
+    .navbar-brand.logo{
+        width: 50%;
+    }
+    h1, .start_course h1{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .autor_project h2{
+        width: 78%;
+        margin: 10px auto 0;
+        font-size: 1.3em;
+    }
+    .autor_project{
+        background-size: 90%;
+    }
+    .autor_project_why{
+        background-size: 100%;
+        margin-top: 40px;
+    }
+    .your_way{
+        background-size: 100%;
+        margin-top: 40px;
+    }
+    .autor_project_cand{
+        background-size: 78%;
+    }
+    /* .autor_project h2, .support h2{
+        
+    } */
+    .menu_part{
+        margin-bottom: 0.5em;
+    }
+    .btn_course{
+        margin-top: 14px;
+        font-size: 14px;
+        width: 9em;
+    }
+    .smart_tools_1, .smart_tools_2{
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .media img{
+        width: 10%;
+    }
+    .media-body h5{
+        font-size: 12px;
+    }
+    .media-body{
+        font-size: 12px;
+    }
+    .media{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+    .personal_cnsult_header {
+        display: flex;
+        bottom: -2%;
+        left: 8%;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .personal_cnsult_header p{
+        width: 47%;
+        text-align: justify;
+    }
+    .btn_course_telegram{
+        background-position: 20px;
+    }
+    .btn_course_viber{
+        background-position: 30px;
+    }
+    .why_we p, .problems p, .support, .what_know p, p, .hi_friend p{
+        font-size: 0.8em;
+    }
+    .why_we{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .why_we div {
+        width: 38%;
+    }
+    .autor_project p{
+        font-size: 14px;
+    }
+    .autor_project{
+        height: 9em;
+    }
+    .root{
+        height: 120px;
+        background-size: 100% auto;
+    }
+    #fruits{
+        margin-top: 40px;
+    }
+    .footer_btn{
+        display: none;
+    }
+    .support{
+        text-align: center;
+    }
+    .support h2{
+        font-size: 1.4em;
+    }
+    .personal_cnsult{
+        padding-bottom: 20px;
+    }
+    footer .collapse:not(.show) {
+        display: block;
+    }
+    footer {
+        padding: 40px 1em 0 1em;
+    }
+    footer .collapse:not(.show) .navbar-nav{
+        background-color:transparent;
+    }
+    .what_know{
+        text-align: center;
+    }
+    .mobile_img img{
+        width: 30%;
+    }
+    .results div iframe{
+        width:300px!important; 
+    }
+    .results div{
+        left: 6%;
+    }
+    .terms{
+        margin: 20px 0;
+    }
+    .start_course h1{
+        margin-bottom: 40px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer .navbar-brand.logo {
+        margin: 0 auto;
+    } 
+    .what_know h2{
+        font-size: 1.3em;
+    }
+    .buttons, .hi_friend{
+        text-align: center;
+    }
+    .results-top{
+        background-size: 79%;
+        width: 78%;
     }
 }
 
