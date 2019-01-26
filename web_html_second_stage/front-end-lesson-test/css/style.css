@@ -1,0 +1,86 @@
+html, body, .wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.wrapper{
+    padding: 0 10%;
+}
+header{
+    background-image: url("../img/background.jpg");
+    background-size: 100% 65%;
+    height: 65%;
+    background-repeat: no-repeat;
+}
+.social_icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+.social_icons div{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: grey;
+    margin-right: 10px;
+}
+nav{
+    height: 16%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    margin-top: 3%;
+}
+nav .logo{
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    width: 9%;
+    height: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    width: 91%;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+}
+.menu h1{
+    color: #ec523f;
+    margin-left: 5%;
+}
+.menu ul li{
+    margin-right: 5%;
+}
+.menu ul li a{
+    color: grey;
+    text-decoration: none;
+}
+.menu ul li.active a{
+    color: #ec523f;
+    position: relative;
+}
+.menu ul li.active a:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    display: block;
+    background: #ec523f;
+    top: -42px;
+    left: 0;
+}
