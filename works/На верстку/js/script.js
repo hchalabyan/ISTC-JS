@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function showVal(){
     var val = document.getElementsByTagName("input");
     //var res = document.getElementsByTagName("h6");
@@ -62,8 +61,6 @@ sub_button.addEventListener('click', function(){
     showVal();
 }, false)
 
-=======
 $(".results-play-video").click(function () {
     $(videoModal).modal('show');
 });
->>>>>>> 2360ddee297e1e5d564d8df5628b27db94fb8078

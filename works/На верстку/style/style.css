@@ -1,6 +1,7 @@
 body{
     font-family: 'Source Sans Pro',sans-serif;
     font-weight: 100;
+    overflow-x: hidden;
 }
 .wrapper{
     width: 100%;
@@ -435,7 +436,13 @@ form h6{
     font-size: 14px;
 }
 .navbar-light .navbar-toggler{
+    background-color:#00ff00;
+    outline: none;
+}
+.buttons .btn_course:hover{
     background-color:rgb(153, 204, 5);
+    cursor: pointer;
+    border: none;
 }
 @media(max-width:1803px) and (min-width:1200px){
     .project_smart_slim h1{
@@ -508,18 +515,8 @@ form h6{
 }*/
 
 
-@media(max-width:1000px) and (min-width:992px){
-    .btn_course{
-        width: 16em;
-        font-size: 12px;
-    }
-    .btn_course_telegram,  .btn_course_viber{
-        background-position: 4em center;
-        padding-left: 2.5em;
-    }
-    
-}
-@media(max-width:1199px) and (min-width: 992px){
+
+@media(max-width:1200px) and (min-width: 992px){
     .navbar-brand.logo{
         width: 29%;
     }
@@ -536,7 +533,7 @@ form h6{
         font-size:1.3em;
     }
     .wrapper{
-        background-size: contain;
+        background-size: 100% 100%;
         height: 72vh;
         min-height: 468px;
         padding: 0 3em;
@@ -587,21 +584,126 @@ form h6{
     }
     
 }
+@media(max-width:1000px) and (min-width:992px){
+    .btn_course{
+        width: 16em;
+        font-size: 12px;
+    }
+    .btn_course_telegram,  .btn_course_viber{
+        background-position: 4em center;
+        padding-left: 2.5em;
+    }
+    
+}
 @media(max-width:991px) and (min-width: 375px){
-    .wrapper{
-        background-image: url("../img/mobile.png");
-        background-repeat: no-repeat;
-        height: 90vh;
+    .navbar-brand.logo{
+        width: 60%;
+    }
+    
+    .menu_part .navbar-light .navbar-toggler-icon{
+        background-image: none;
+    }
+    .menu_part .navbar-nav{
+        flex-direction: column;
+        background-color: rgb(153, 204, 5);
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_part .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+        color: white;
+        border-bottom: 1px solid;
+    }
+    .menu_part #navbarNav {
+        justify-content: flex-end;
+        position: absolute;
+        top: 82px;
+        left: 0;
         width: 100%;
-        padding: 0 1em;
+        z-index: 2;
+    }
+    .menu_part .navbar-toggler{
+        padding: .50rem .75rem;
+        border-radius: 1.5rem;
+    }
+    .project_smart_slim h1 span{
+        display: block;
+    }
+    .project_smart_slim h1{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 17px;
+    }
+    .for_mobile{
+        display: none;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn_course_start{
+        margin-right: 0;
+    }
+    .btn_course{
+        margin-top: 12px;
+        margin-right: 0;
+    }
+    .media{
+        padding: 35px;
+    }
+    .smart_tools_1, .smart_tools_2,.smart_tools_3{
+        width: 49%;
+        height: 50px;
+     }
+     .smart_tools_1, .smart_tools_2{
+         margin-top: 34px;
+     }
+     .smart_tools_3{
+         margin-top: 15px;
+         justify-content: center;
+        margin: 0 auto;
+     }
+     .mobile_tools{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+     .personal_cnsult_header img{
+         display: none;
+     }
+     .personal_cnsult_header {
+        bottom: 6%;
+        left: 13%;
+        font-size: 12px;
+    }
+    footer .collapse:not(.show){
+        display: block;
+    }
+    
+    footer{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    footer .navbar-nav{
+        align-items: center;
+    }
+    .navbar-nav li{
+        margin-left: 0;
     }
 }
+
 @media(max-width:991px) and (min-width: 768px){
+    .wrapper{
+        background-image: url("../img/teblet.png");
+        background-repeat: no-repeat;
+        min-height: 770px;
+        padding: 0 2%;
+        background-size: 991px 100%;
+        background-position: top left;
+    }
     .menu_part {
         margin-bottom: 0;
-    }
-    .wrapper{
-        min-height: 782px;
     }
     h1, .start_course h1{
         font-size: 2em;
@@ -610,14 +712,7 @@ form h6{
         font-size: 1.5em;
     }
     .autor_project_cand {
-        background-size: 100%;
-    }
-    
-    .smart_tools_1, .smart_tools_2{
-        margin-bottom: 15px;
-    }
-    .media img{
-        width: 10%;
+        background-size: 83%;
     }
     .media-body h5{
         font-size: 14px;
@@ -625,20 +720,7 @@ form h6{
     .media-body{
         font-size: 12px;
     }
-    .btn_course{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .for_mobile{
-        display: none;
-    }
-    .personal_cnsult_header {
-        display: flex;
-        bottom: -2%;
-        left: 8%;
-        flex-direction: column;
-        font-size: 12px;
-    }
+    
     .why_we{
         margin: 0 auto;
         width: 100%;
@@ -673,44 +755,25 @@ form h6{
     .results{
         background-size: 91%;
     }
-    footer .collapse:not(.show){
-        display: block;
-    }
-    .navbar-nav li{
-        margin-left: 12px;
-    }
-    .navbar-nav{
-        flex-direction: row;
-    }
-    .footer_logo{
-        margin: 0 auto;
-    }
-    #fruits{
-        margin-top: 0;
-    }
     .start_course{
-        background-size: 100%;
+        background-size: 86%;
     }
+    
 }
 @media(max-width:767px) and (min-width: 561px){
     .wrapper{
-        padding: 0 1em;
-    }
-    .navbar-nav li{
-        margin-left: 0;
-    }
-    .navbar-nav{
-        text-align: center;
-        background-color: rgba(153, 204, 5, 0.5);
-    }
-    .navbar-brand.logo{
-        width: 60%;
+        background-image: url("../img/teblet.png");
+        background-repeat: no-repeat;
+        min-height: 770px;
+        padding: 0 2%;
+        background-size: 991px 100%;
+        background-position: top left;
     }
     h1, .start_course h1{
         font-size: 1.5em;
     }
     .autor_project h2{
-        width: 78%;
+        width:69%;
         margin: 10px auto 0;
         font-size: 1.4em;
     }
@@ -718,29 +781,23 @@ form h6{
         background-size: 90%;
     }
     .autor_project_why{
-        background-size: 100%;
+        background-size: 90%;
+    }
+    .autor_project_why_res{
+        background-size: 83%;
     }
     .your_way{
-        background-size: 82%;
+        background-size:67%;
         margin-top: 40px;
     }
+    .start_course{
+        background-size: 90%;
+    }
     .autor_project_cand{
-        background-size: 78%;
+        background-size: 69%;
     }
-    /* .autor_project h2, .support h2{
-        
-    } */
     .menu_part{
-        margin-bottom: 0.5em;
-    }
-    .btn_course{
-        margin-top: 14px;
-        font-size: 14px;
-        width: 14em;
-    }
-    .smart_tools_1, .smart_tools_2{
-        margin-bottom: 15px;
-        margin-top: 10px;
+        margin-bottom: 0;
     }
     .media img{
         width: 10%;
@@ -751,24 +808,11 @@ form h6{
     .media-body{
         font-size: 12px;
     }
-    .media{
-        display: flex;
-        align-items: center;
-        font-size: 10px;
-        padding: 4px 10px;
-    }
-    .personal_cnsult_header {
-        display: flex;
-        bottom: -2%;
-        left: 8%;
-        flex-direction: column;
-        font-size: 12px;
-    }
     .personal_cnsult_header p{
         width: 70%;
         text-align: justify;
     }
-    .why_we p, .problems p, .support{
+    .why_we p, .problems p, .support, p, .what_know p{
         font-size: 0.8em;
     }
     .why_we{
@@ -787,9 +831,13 @@ form h6{
     }
     #fruits{
         margin-top: 40px;
+        padding-bottom: 10px;
     }
     .footer_btn{
         display: none;
+    }
+    .mobile_img IMG{
+        width: 19%;
     }
     .support{
         text-align: center;
@@ -797,14 +845,122 @@ form h6{
     .support h2{
         font-size: 1.4em;
     }
-    .personal_cnsult{
-        padding-bottom: 20px;
+
+    footer .personal_cnsult{
+        margin-bottom: 30px;
     }
+    .what_know{
+        text-align: center;
+    }
+    .results-top{
+        background-size: 79%;
+        width: 78%;
+    }
+}
+@media(max-width:560px) and (min-width: 481px){
+    .wrapper{
+        background-image: url("../img/teblet.png");
+        background-repeat: no-repeat;
+        min-height: 770px;
+        padding: 0 2%;
+        background-size: 991px 100%;
+        background-position: top left;
+    }
+    .media {
+        padding: 30px 10px;
+    }
+    footer .navbar-brand.logo{
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1, .start_course h1{
+        font-size: 1.5em;
+    }
+    .autor_project h2{
+        width:69%;
+        margin: 10px auto 0;
+        font-size: 1.4em;
+    }
+    .autor_project{
+        background-size: 90%;
+    }
+    .autor_project_why{
+        background-size: 90%;
+    }
+    .autor_project_why_res{
+        background-size: 83%;
+    }
+    .your_way{
+        background-size:67%;
+        margin-top: 40px;
+    }
+    .start_course{
+        background-size: 90%;
+    }
+    .autor_project_cand{
+        background-size: 69%;
+    }
+    /* .autor_project h2, .support h2{
+        
+    } */
+    .menu_part{
+        margin-bottom: 0;
+    }
+    .media img{
+        width: 15%;
+    }
+    .media-body h5{
+        font-size: 11px;
+    }
+    .media-body{
+        font-size: 10px;
+    }
+    .personal_cnsult_header p{
+        width: 70%;
+        text-align: justify;
+    }
+    .why_we p, .problems p, .support, p, .what_know p{
+        font-size: 0.8em;
+    }
+    .why_we{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .why_we div {
+        width: 38%;
+    }
+    .autor_project p{
+        font-size: 14px;
+    }
+    .root{
+        height: 200px;
+        background-size: 97% auto;
+    }
+    #fruits{
+        margin-top: 40px;
+        padding-bottom: 10px;
+    }
+    .footer_btn{
+        display: none;
+    }
+    .mobile_img IMG{
+        width: 19%;
+    }
+    .support{
+        text-align: center;
+    }
+    .support h2{
+        font-size: 1.4em;
+    }
+
     footer .collapse:not(.show) {
         display: block;
     }
     footer {
         padding: 70px 1em 0 1em;
+    }
+    footer .personal_cnsult{
+        margin-bottom: 30px;
     }
     footer .collapse:not(.show) .navbar-nav{
         background-color:transparent;
@@ -817,15 +973,17 @@ form h6{
         width: 78%;
     }
 }
-@media(max-width:560px) and (min-width: 375px){
+@media(max-width:480px) and (min-width: 375px){
+    .wrapper{
+        background-image: url("../img/mobile.png");
+        background-repeat: no-repeat;
+        min-height: 770px;
+        padding: 20px 2%;
+        background-size: 481px auto;
+        background-position: top left;
+    }
     .navbar-toggler{
         font-size: 1rem;
-    }
-    .wrapper{
-        padding: 0 1em;
-    }
-    .navbar-nav li{
-        margin-left: 0;
     }
     .navbar-nav{
         text-align: center;
@@ -863,23 +1021,30 @@ form h6{
     .menu_part{
         margin-bottom: 0.5em;
     }
+    .buttons .btn_course{
+        width:164px;
+        border: 2px solid;
+    }
     .btn_course{
         margin-top: 14px;
         font-size: 14px;
         width: 9em;
     }
+    .smart_tools_1, .smart_tools_2, .smart_tools_3 {
+        height: auto;
+    }
     .smart_tools_1, .smart_tools_2{
         margin-bottom: 15px;
-        margin-top: 10px;
+        margin-top:34px;
     }
     .media img{
-        width: 10%;
+        width: 19%;
     }
     .media-body h5{
-        font-size: 12px;
+        font-size: 8.7px;
     }
     .media-body{
-        font-size: 12px;
+        font-size: 6.77px;
     }
     .media{
         display: flex;
@@ -888,15 +1053,13 @@ form h6{
         padding: 4px 10px;
     }
     .personal_cnsult_header {
-        display: flex;
-        bottom: -2%;
-        left: 8%;
-        flex-direction: column;
-        font-size: 12px;
+        bottom: 9%;
+        left: 14%;
     }
     .personal_cnsult_header p{
-        width: 47%;
         text-align: justify;
+        font-size: 12px;
+        width: 65%;
     }
     .btn_course_telegram{
         background-position: 20px;
@@ -913,6 +1076,9 @@ form h6{
     }
     .why_we div {
         width: 38%;
+    }
+    .start_course{
+        background-size: 100%;
     }
     .autor_project p{
         font-size: 14px;
@@ -977,6 +1143,7 @@ form h6{
     .buttons, .hi_friend{
         text-align: center;
     }
+    
     .results-top{
         background-size: 79%;
         width: 78%;
