@@ -587,18 +587,15 @@ form h6{
     }
     
 }
-/* @media(max-width:1000px) and (min-width:992px){
-    .btn_course{
-        width: 16em;
-        font-size: 12px;
+@media(max-width:991px) and (min-width: 375px){
+    .wrapper{
+        background-image: url("../img/mobile.png");
+        background-repeat: no-repeat;
+        height: 90vh;
+        width: 100%;
+        padding: 0 1em;
     }
-    .btn_course_viber{
-        background-size: 4.6em center;
-    }
-    .btn_course_telegram{
-        background-size: 3em center;
-    }
-} */
+}
 @media(max-width:991px) and (min-width: 768px){
     .menu_part {
         margin-bottom: 0;
