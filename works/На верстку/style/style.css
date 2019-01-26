@@ -185,12 +185,11 @@ nav{
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
     height: 100px;
-    width:86%;
-    opacity: 0.6;
+    width:70%;
 }
 .why_we div{
     background-color: rgb(153, 204, 5);
-    width: 20%;
+    width: 30%;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -198,10 +197,12 @@ nav{
 .odd{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    opacity: 0.6;
 }
 .even{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    opacity: 0.6;
 }
 .why_we p{
     text-align: center;
@@ -212,11 +213,15 @@ nav{
     font-weight: 600;
     width: 80%;
     align-self: center;
+    padding: 0 28px;
 }
 .why_we:hover{
     background-color: white;
     opacity: 1;
     cursor: pointer;
+}
+.why_we:hover .odd, .why_we:hover .even{
+    opacity: 1;
 }
 .mb-20{
     margin-bottom: 25px;
