@@ -84,6 +84,7 @@ form input{
 }
 form input::placeholder{
     color: white;
+    font-size: 0.8em;
 }
 form button{
     margin-top: 1em;
@@ -95,10 +96,27 @@ form button{
     color: black;
     border: none;
     cursor: pointer;
+    font-size: 1em;
 }
 #notValid_email, #notEqual_pass{
     font-size: 0.8em;
     color: red;
     text-transform: capitalize;
 } 
+@media(max-width:991px) and (min-width:768px){
+    html, body, .wrapper{
+        font-size: 10px;
+    }
+    .form_registr{
+        width: 70%;
+    }
+}
+@media(max-width:767px) and (min-width:375px){
+    html, body, .wrapper{
+        font-size: 10px;
+    }
+    .form_registr{
+        width: 80%;
+    }
+}
 
