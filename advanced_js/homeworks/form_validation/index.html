@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form_registr">
+            <div class="pic"></div>
+            <div class="form_part">
+                <div class="form_header">
+                    <div class="active"> <span>sign up</span> </div>
+                    <div> <span>sign in</span> </div>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Username">
+
+                    <input type="text" placeholder="E-mail">
+
+                    <p id="notValid_email"></p>
+
+                    <label for="">Password</label>
+
+                    <input type="password" >
+
+                    <label for="">Confirm password</label>
+
+                    <input type="password" oninput="passW()">
+
+                    <p id="notEqual_pass"></p>
+
+                    <button type="button" id="sub_button">Register</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
