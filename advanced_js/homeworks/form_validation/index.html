@@ -12,11 +12,15 @@
         <div class="form_registr">
             <div class="pic"></div>
             <div class="form_part">
-                <div class="form_header">
-                    <div class="active"> <span>sign up</span> </div>
-                    <div> <span>sign in</span> </div>
+                <div class="form_header" id="form_header" onclick="activeClass(event)">
+                    <div onclick="remoteSign()"> 
+                        <span class="signRemote active">sign up</span> 
+                    </div>
+                    <div onclick="remotLogin()"> 
+                        <span class="loginRemote">sign in</span> 
+                    </div>
                 </div>
-                <form action="">
+                <form action="" id="signIn">
                     <input type="text" placeholder="Username">
 
                     <input type="text" placeholder="E-mail">
@@ -35,6 +39,20 @@
 
                     <button type="button" id="sub_button">Register</button>
                     
+                </form>
+                <form action="" id="login">
+                    <label>Username</label>
+
+                    <input type="text" class="login_inp">
+
+                    <label>Password</label>
+
+                    <input type="password" class="login_inp">
+
+                    <p id="wrong_log"></p>
+                    
+                    <button type="button" id="log_button">Log In</button>
+
                 </form>
             </div>
         </div>
