@@ -3,16 +3,27 @@ html, body, .wrapper{
     height: 100%;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+p{
+    font-size: 1em;
 }
 .wrapper{
     padding: 0 10%;
 }
 header{
     background-image: url("../img/background.jpg");
-    background-size: 100% 65%;
-    height: 65%;
+    background-size: 100% 100%;
+    height: auto;
     background-repeat: no-repeat;
+    padding-bottom: 2em;
 }
 .social_icons{
     display: flex;
@@ -20,48 +31,51 @@ header{
     padding-top: 3%;
 }
 .social_icons div{
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
     background-color: #fff;
     border-radius: 50%;
-    line-height: 30px;
+    line-height: 2em;
     text-align: center;
     color: grey;
     margin-right: 10px;
 }
 nav{
-    height: 16%;
-    width: 70%;
+    height: 5em;
+    width: 90%;
     margin: 0 auto;
     background-color: #fff;
     display: flex;
     margin-top: 3%;
 }
-nav .logo{
+nav .logo, nav .logo_mobile{
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
-    width: 9%;
+    width: 6em;
     height: 100%;
+    background-size: 100% 100%;
 }
 .menu{
     display: flex;
     align-items: center;
-    width: 91%;
+    width: 100%;
     justify-content: space-between;
 }
 .menu ul{
     display: flex;
     list-style-type: none;
     padding-left: 0;
-    width: 50%;
+    width: 100%;
     text-transform: uppercase;
     font-weight: bold;
     height: 100%;
     align-items: center;
+    justify-content: flex-end;
 }
 .menu h1{
     color: #ec523f;
     margin-left: 5%;
+    font-size: 2em;
 }
 .menu ul li{
     margin-right: 5%;
@@ -69,6 +83,7 @@ nav .logo{
 .menu ul li a{
     color: grey;
     text-decoration: none;
+    font-size: 1em;
 }
 .menu ul li.active a{
     color: #ec523f;
@@ -81,6 +96,137 @@ nav .logo{
     position: absolute;
     display: block;
     background: #ec523f;
-    top: -42px;
+    top: -2.1em;
     left: 0;
+}
+.digital{
+    margin-top: 3em;
+}
+.digital h1{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid;
+    width: 9em;
+    margin: 0 auto;
+}
+.digital p{
+    color: white;
+    text-align: center;
+}
+.digital button{
+    width: 15em;
+    height: 3.5em;
+    border-radius: 5px;
+    background-color: #ec523f;
+    border: navajowhite;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: 1em;
+
+}
+#srvices, #portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+}
+#srvices h2, #portfolio h2{
+    color: #40494F;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 1px solid #40494F;
+    margin: 0 auto;
+}
+#srvices p, #portfolio p{
+    text-align: center;
+    color: #40494F;
+}
+#services_block, #portfolio_block1, #portfolio_block2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.services_elemnt{
+    width: 10em;
+    height: 11em;
+    margin-left: 1em;
+}
+.services_elemnt0{
+    background-color: #1BBC9B;
+}
+.services_elemnt1{
+    background-color: #E67F22;
+}
+.services_elemnt2{
+    background-color: #3598DB;
+}
+
+.services_elemnt3{
+    background-color: #2DCC72;
+}
+.portfolio_elemnt{
+    width: 10em;
+    height: 11em;
+    margin-left: 1em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.menu_collaps, .logo_mobile{
+    display: none;
+    position: relative;
+}
+.menu_items_list{
+    max-height: 0;            
+    overflow-y: hidden;
+    flex-direction: column;
+    transition: max-height 1s;
+    padding-left: 0;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    background-color: #ec523f;
+    width: 100%;
+    font-size: 2em;
+}
+.menu_items_list li{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.menu_items_list li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+@media(max-width:991px) and (min-width:320px){
+    html, body, .wrapper{
+        font-size: 8px;
+    }
+    .logo{
+        display: none;
+    }
+    .logo_mobile{
+        display: block;
+    }
+    .menu_collaps{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .menu_collaps h1{
+        color: #ec523f;
+        padding-right: 1em;
+    }
+    .menu{
+        display: none;
+    }
+    nav{
+        justify-content: space-between;
+    }
 }
