@@ -21,3 +21,6 @@ function openMenu(){
 mobileMenu.addEventListener('click', function(){
     openMenu();
 }, false)
+
+
+
