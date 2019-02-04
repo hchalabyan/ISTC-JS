@@ -20,38 +20,43 @@ p{
 }
 header{
     background-image: url("../img/background.jpg");
-    background-size: 100% 100%;
+    background-size: 75% 100%;
     height: auto;
     background-repeat: no-repeat;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    width: 100%;
+    background-position: top center;
 }
 .social_icons{
     display: flex;
     justify-content: center;
-    padding-top: 3%;
+    padding-top: 1em;
 }
 .social_icons div{
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: #fff;
     border-radius: 50%;
-    line-height: 2em;
+    line-height: 1.5em;
     text-align: center;
     color: grey;
     margin-right: 10px;
 }
+.social_icons div i{
+    font-size: 0.7em;
+}
 nav{
-    height: 5em;
-    width: 90%;
+    height: 3em;
+    width: 65%;
     margin: 0 auto;
     background-color: #fff;
     display: flex;
-    margin-top: 3%;
+    margin-top:1em;
 }
 nav .logo, nav .logo_mobile{
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
-    width: 6em;
+    width: 4em;
     height: 100%;
     background-size: 100% 100%;
 }
@@ -75,7 +80,7 @@ nav .logo, nav .logo_mobile{
 .menu h1{
     color: #ec523f;
     margin-left: 5%;
-    font-size: 2em;
+    font-size: 1.4em;
 }
 .menu ul li{
     margin-right: 5%;
@@ -83,7 +88,7 @@ nav .logo, nav .logo_mobile{
 .menu ul li a{
     color: grey;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 .menu ul li.active a{
     color: #ec523f;
@@ -96,11 +101,11 @@ nav .logo, nav .logo_mobile{
     position: absolute;
     display: block;
     background: #ec523f;
-    top: -2.1em;
+    top: -1.5em;
     left: 0;
 }
 .digital{
-    margin-top: 3em;
+    margin-top: 1em;
 }
 .digital h1{
     text-transform: uppercase;
@@ -109,13 +114,14 @@ nav .logo, nav .logo_mobile{
     border-bottom: 1px solid;
     width: 9em;
     margin: 0 auto;
+    font-size: 1.5em;
 }
 .digital p{
     color: white;
     text-align: center;
 }
 .digital button{
-    width: 15em;
+    width: 13em;
     height: 3.5em;
     border-radius: 5px;
     background-color: #ec523f;
@@ -126,16 +132,16 @@ nav .logo, nav .logo_mobile{
     font-weight: 600;
     margin: 0 auto;
     display: block;
-    padding: 1em;
+    padding: 0.3em;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 0.5em;
 
 }
 #srvices, #portfolio{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 #srvices h2, #portfolio h2{
     color: #40494F;
@@ -143,10 +149,12 @@ nav .logo, nav .logo_mobile{
     display: inline-block;
     border-bottom: 1px solid #40494F;
     margin: 0 auto;
+    font-size: 1em;
 }
 #srvices p, #portfolio p{
     text-align: center;
     color: #40494F;
+    margin: 0.8em;
 }
 #services_block, #portfolio_block1, #portfolio_block2{
     display: flex;
@@ -154,8 +162,8 @@ nav .logo, nav .logo_mobile{
     margin-top: 1em;
 }
 .services_elemnt{
-    width: 10em;
-    height: 11em;
+    width: 7em;
+    height:7em;
     margin-left: 1em;
 }
 .services_elemnt0{
@@ -172,8 +180,8 @@ nav .logo, nav .logo_mobile{
     background-color: #2DCC72;
 }
 .portfolio_elemnt{
-    width: 10em;
-    height: 11em;
+    width: 7em;
+    height: 7em;
     margin-left: 1em;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -190,10 +198,11 @@ nav .logo, nav .logo_mobile{
     padding-left: 0;
     position: absolute;
     top: 60%;
-    left: 0;
+    left: 50%;
     background-color: #ec523f;
-    width: 100%;
+    width: 7em;
     font-size: 2em;
+    transform: translateX(-50%);
 }
 .menu_items_list li{
     margin-bottom: 10px;
@@ -208,11 +217,20 @@ nav .logo, nav .logo_mobile{
     html, body, .wrapper{
         font-size: 8px;
     }
+    nav{
+        width: 6em;
+        height: 6em;
+    }
     .logo{
         display: none;
     }
     .logo_mobile{
         display: block;
+        width: 6em;
+        height: 6em;
+    }
+    nav .logo, nav .logo_mobile{
+        width: 6em;
     }
     .menu_collaps{
         display: flex;
