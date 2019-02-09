@@ -31,9 +31,6 @@ function addToDoLIst(){
     newList.appendChild(toDo);
     newList.appendChild(addDeleteDiv);
     toDo.appendChild(list_content); 
-
-    
-
 }
 addButton.addEventListener('click', function(){
     addToDoLIst();
@@ -46,7 +43,6 @@ document.getElementById("main_content").addEventListener("click",function(e) {
         changedStyle.style.color = "red";
         changedStyle.style.textDecoration="line-through" ;
         var movedToBottomElem = changedStyle.parentElement.parentElement;
-        main_content.appendChild(movedToBottomElem);
-        console.log();    
+        main_content.appendChild(movedToBottomElem);  
     }
 }); 
